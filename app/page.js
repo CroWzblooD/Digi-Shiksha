@@ -951,7 +951,6 @@ export default function Home() {
                       </div>
                     </div>
                     <h3 className="text-2xl font-semibold mb-3 font-montserrat">{step.title}</h3>
-                    <h3 className="text-2xl font-semibold mb-3 font-montserrat">{step.title}</h3>
                     <p className="text-gray-600">{step.description}</p>
                   </motion.div>
                 ))}
