@@ -22,7 +22,10 @@ import {
   ExclamationTriangleIcon,
   ClockIcon,
   ChevronRightIcon,
-  HomeIcon
+  HomeIcon,
+  HandRaisedIconSolid,
+  ArrowPathIcon,
+  BuildingLibraryIcon
 } from '@heroicons/react/24/outline';
 import { 
   ShieldCheckIcon as ShieldCheckIconSolid, 
@@ -33,13 +36,18 @@ import {
 } from '@heroicons/react/24/solid';
 
 // Google Maps integration
-import { GoogleMap, LoadScript, Marker, Circle } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker, Circle, Polyline, InfoWindow } from '@react-google-maps/api';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [activeStatIndex, setActiveStatIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState(null);
+  const [mapType, setMapType] = useState('roadmap');
+  const [showSafeRoute, setShowSafeRoute] = useState(false);
+  const [mobileMapExpanded, setMobileMapExpanded] = useState(false);
+  
   const missionRef = useRef(null);
   const realityRef = useRef(null);
   const mapRef = useRef(null);
@@ -103,29 +111,87 @@ export default function Home() {
     };
   }, [realityStats.length]);
 
-  // Map center for Bangalore, India
+  // Map center for Delhi, India (updated from Bangalore)
   const mapCenter = {
-    lat: 12.9716,
-    lng: 77.5946
+    lat: 28.6139,
+    lng: 77.2090
   };
 
   const mapStyles = {
-    height: '400px',
+    height: mobileMapExpanded ? '80vh' : '400px',
     width: '100%',
     borderRadius: '1rem',
+    transition: 'height 0.3s ease-in-out'
   };
 
-  // Safe and danger zones for demo
+  // Safe and danger zones for Delhi (updated)
   const safeZones = [
-    { lat: 12.9716, lng: 77.5946, radius: 1000 }, // City center
-    { lat: 12.9352, lng: 77.6245, radius: 800 },  // Koramangala
-    { lat: 12.9698, lng: 77.7499, radius: 600 },  // Whitefield
+    { lat: 28.6139, lng: 77.2090, radius: 800, name: "Connaught Place", rating: "High" }, // Central Delhi
+    { lat: 28.5494, lng: 77.2001, radius: 600, name: "Saket", rating: "High" }, // South Delhi
+    { lat: 28.5623, lng: 77.2373, radius: 700, name: "Defence Colony", rating: "Very High" }, // South Delhi
+    { lat: 28.5362, lng: 77.2410, radius: 500, name: "Greater Kailash", rating: "High" }, // South Delhi
+    { lat: 28.6304, lng: 77.2177, radius: 400, name: "Karol Bagh", rating: "Medium" }, // Central Delhi
+    { lat: 28.6262, lng: 77.0974, radius: 600, name: "Rajouri Garden", rating: "Medium" }, // West Delhi
+    { lat: 28.6181, lng: 77.2858, radius: 500, name: "Laxmi Nagar", rating: "Medium" }, // East Delhi
   ];
 
   const dangerZones = [
-    { lat: 13.0159, lng: 77.5699, radius: 500 },  // Example area 1
-    { lat: 12.9063, lng: 77.5857, radius: 400 },  // Example area 2
+    { lat: 28.6696, lng: 77.2152, radius: 400, name: "Kashmere Gate", desc: "Poorly lit after dark" },  // North Delhi
+    { lat: 28.6129, lng: 77.2295, radius: 300, name: "New Delhi Railway Station", desc: "Crowded, reports of theft" },  // Central Delhi
+    { lat: 28.5830, lng: 77.3178, radius: 450, name: "Ghazipur", desc: "Isolated areas at night" },  // East Delhi
+    { lat: 28.7041, lng: 77.1025, radius: 350, name: "Rohini", desc: "Limited patrol presence" }, // Northwest Delhi
+    { lat: 28.5585, lng: 77.1350, radius: 350, name: "Mahipalpur", desc: "Limited street lighting" }, // Southwest Delhi
   ];
+
+  // Police stations
+  const policeStations = [
+    { lat: 28.6129, lng: 77.2273, name: "Connaught Place Police Station" },
+    { lat: 28.5400, lng: 77.2200, name: "Greater Kailash Police Station" },
+    { lat: 28.6380, lng: 77.2190, name: "Karol Bagh Police Station" },
+    { lat: 28.6529, lng: 77.2370, name: "Civil Lines Police Station" },
+    { lat: 28.6406, lng: 77.0997, name: "Rajouri Garden Police Station" },
+    { lat: 28.5672, lng: 77.2410, name: "Defence Colony Police Station" },
+  ];
+  
+  // Popular destinations
+  const popularDestinations = [
+    { lat: 28.6129, lng: 77.2295, name: "New Delhi Railway Station" },
+    { lat: 28.5562, lng: 77.1000, name: "Indira Gandhi International Airport" },
+    { lat: 28.6024, lng: 77.2145, name: "India Gate" },
+    { lat: 28.6542, lng: 77.2373, name: "Delhi University North Campus" },
+    { lat: 28.5913, lng: 77.2219, name: "Jantar Mantar" },
+  ];
+  
+  // Safe route path (simulated route from CP to Defence Colony)
+  const safeRoutePath = [
+    { lat: 28.6139, lng: 77.2090 }, // Start: Connaught Place
+    { lat: 28.6129, lng: 77.2200 }, 
+    { lat: 28.6100, lng: 77.2250 },
+    { lat: 28.6000, lng: 77.2300 },
+    { lat: 28.5900, lng: 77.2350 },
+    { lat: 28.5800, lng: 77.2380 },
+    { lat: 28.5700, lng: 77.2373 },
+    { lat: 28.5623, lng: 77.2373 }  // End: Defence Colony
+  ];
+  
+  // Alternative route - less safe but shorter
+  const alternativeRoutePath = [
+    { lat: 28.6139, lng: 77.2090 }, // Start: Connaught Place
+    { lat: 28.6100, lng: 77.2150 },
+    { lat: 28.6000, lng: 77.2200 },
+    { lat: 28.5900, lng: 77.2250 },
+    { lat: 28.5800, lng: 77.2300 },
+    { lat: 28.5700, lng: 77.2350 },
+    { lat: 28.5623, lng: 77.2373 }  // End: Defence Colony
+  ];
+
+  const toggleSafeRoute = () => {
+    setShowSafeRoute(!showSafeRoute);
+  };
+
+  const toggleMapExpansion = () => {
+    setMobileMapExpanded(!mobileMapExpanded);
+  };
 
   return (
     <>
@@ -136,7 +202,7 @@ export default function Home() {
             {/* Logo */}
             <a href="#" className="flex items-center">
               <ShieldCheckIconSolid className={`h-8 w-8 mr-2 ${scrollPosition > 50 ? 'text-[#FF1493]' : 'text-white'}`} />
-              <span className={`text-2xl md:text-3xl font-bold font-montserrat ${scrollPosition > 50 ? 'text-[#FF1493]' : 'text-white'}`}>
+              <span className={`text-2xl md:text-3xl font-bold font-poppins ${scrollPosition > 50 ? 'text-[#FF1493]' : 'text-white'}`}>
                 SafeStreet
               </span>
             </a>
@@ -274,7 +340,7 @@ export default function Home() {
                   <ShieldCheckIconSolid className="w-5 h-5 mr-2 text-[#FF1493]" />
                   <span className="text-sm font-medium">Women's Safety Initiative</span>
                 </div>
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight font-montserrat">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight font-poppins">
                   Your Safety Companion
                 </h1>
                 <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-xl">
@@ -558,6 +624,11 @@ export default function Home() {
                       title: "Community Support",
                       description: "Building networks of verified guardians who can provide immediate physical assistance"
                     },
+                    {
+                      icon: <HandRaisedIcon className="w-10 h-10 text-amber-600" />,
+                      title: "Preventive Education",
+                      description: "Empowering women with safety workshops, self-defense training, and community awareness programs"
+                    },
                   ].map((pillar, index) => (
                     <div key={index} className="flex items-center gap-4">
                       <div className="bg-white rounded-full p-2 shadow-lg">{pillar.icon}</div>
@@ -663,7 +734,7 @@ export default function Home() {
               </LoadScript>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 text-black">
               <div className="bg-white p-6 rounded-xl shadow-md flex items-start">
                 <div className="bg-green-100 p-3 rounded-full mr-4">
                   <ShieldCheckIcon className="w-6 h-6 text-green-600" />
