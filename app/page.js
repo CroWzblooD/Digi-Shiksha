@@ -341,7 +341,7 @@ export default function Home() {
                   <span className="text-sm font-medium">Women's Safety Initiative</span>
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight font-poppins">
-                  Your Safety Companion
+                  
                 </h1>
                 <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-xl">
                   Advanced technology and community support for women's personal safety. 
