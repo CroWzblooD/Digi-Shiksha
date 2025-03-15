@@ -9,6 +9,8 @@ import { BsLightbulb, BsGraphUp, BsStarFill } from 'react-icons/bs';
 import { HiOutlineSparkles } from 'react-icons/hi';
 import { BiLeaf, BiWorld, } from 'react-icons/bi';
 
+import Link from 'next/link';
+
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -156,9 +158,11 @@ export default function Home() {
                 addressing infrastructure limitations, teacher shortages, and outdated teaching methods.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-teal-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-                  Get Started
-                </button>
+                <Link href="/dashboard">
+                  <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-teal-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                    Get Started
+                  </button>
+                </Link>
                 <button className="px-8 py-3 border-2 border-green-500 text-green-600 font-medium rounded-lg hover:bg-green-50 transition-colors">
                   Learn More
                 </button>
