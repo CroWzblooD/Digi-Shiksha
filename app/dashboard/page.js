@@ -10,6 +10,7 @@ import StudentsTab from '../components/dashboard/tabs/StudentsTab';
 import AdaptiveAssessmentsTab from '../components/dashboard/tabs/AdaptiveAssessmentsTab';
 import AdaptiveAudioStoryTab from '../components/dashboard/tabs/AdaptiveAudioStoryTab';
 import Sidebar from '../components/dashboard/Sidebar';
+import AIXplainTab from '../components/dashboard/tabs/AIXplainTab';
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('Dashboard');
@@ -33,8 +34,8 @@ export default function Dashboard() {
         return <StudentsTab />;
       case 'AdaptiveAssessments':
         return <AdaptiveAssessmentsTab />;
-      case 'AdaptiveAudioStory':
-        return <AdaptiveAudioStoryTab />;
+      case 'AIXplain':
+        return <AIXplainTab />;
       default:
         return <OverviewTab />;
     }
@@ -53,8 +54,8 @@ export default function Dashboard() {
         return 'Opportunity Navigator';
       case 'AdaptiveAssessments':
         return 'Adaptive Assessments';
-      case 'AdaptiveAudioStory':
-        return 'Adaptive Audio Story';
+      case 'AIXplain':
+        return 'AIXplain Assistant';
       default:
         return 'Dashboard';
     }
@@ -73,7 +74,7 @@ export default function Dashboard() {
         return 'Discover scholarships, programs and opportunities for rural students.';
       case 'AdaptiveAssessments':
         return 'Create and manage adaptive assessments for different learning levels.';
-      case 'AdaptiveAudioStory':
+      case 'AIXplain':
         return 'Voice-based learning content for areas with low literacy or connectivity.';
       default:
         return '';

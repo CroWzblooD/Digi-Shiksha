@@ -7,7 +7,8 @@ import {
   FaBookReader, 
   FaUsers, 
   FaSignOutAlt,
-  FaNetworkWired
+  FaNetworkWired,
+  FaRobot,
 } from 'react-icons/fa';
 import { IoMdSchool } from 'react-icons/io';
 import { RiTranslate, RiDashboardLine } from 'react-icons/ri';
@@ -21,7 +22,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
     { id: 'RegionalContent', label: 'Regional Content', icon: <RiTranslate /> },
     { id: 'OpportunityNavigator', label: 'Opportunity Navigator', icon: <FaUsers /> },
     { id: 'AdaptiveAssessments', label: 'Adaptive Assessments', icon: <FaChalkboardTeacher /> },
-    { id: 'AdaptiveAudioStory', label: 'Adaptive Audio Story', icon: <FaNetworkWired /> },
+    { id: 'AIXplain', label: 'AIXplain Assistant', icon: <FaRobot /> },
   ];
 
   return (
