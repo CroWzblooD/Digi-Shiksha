@@ -8,7 +8,6 @@ import AIChatbotTab from '../components/dashboard/tabs/AIChatbotTab';
 import LocalContentTab from '../components/dashboard/tabs/LocalContentTab';
 import StudentsTab from '../components/dashboard/tabs/StudentsTab';
 import AdaptiveAssessmentsTab from '../components/dashboard/tabs/AdaptiveAssessmentsTab';
-import AdaptiveAudioStoryTab from '../components/dashboard/tabs/AdaptiveAudioStoryTab';
 import Sidebar from '../components/dashboard/Sidebar';
 import AIXplainTab from '../components/dashboard/tabs/AIXplainTab';
 
