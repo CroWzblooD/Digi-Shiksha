@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SafeStree - Women's Safety App",
-  description: "Empowering women's safety through technology with real-time protection and community support.",
+  title: "Digi Shiksha - Rural Education Platform",
+  description: "Bridging the educational gap in rural India through AI-powered learning solutions and personalized content.",
 };
 
 export default function RootLayout({ children }) {
