@@ -34,7 +34,7 @@ async function ensurePythonProcessRunning() {
 
   isProcessStarting = true;
   try {
-    const scriptPath = path.join(process.cwd(), "aixplain_examples", "language_summarizer.py");
+    const scriptPath = path.join(process.cwd(), "backend", "language_summarizer.py");
     pythonProcess = spawn("python", [scriptPath], {
       env: { ...process.env, PYTHONIOENCODING: "utf-8" },
       stdio: ["pipe", "pipe", "pipe"]

@@ -25,7 +25,7 @@ export async function POST(request) {
       questionType: questionType || 'multiple-choice',
     });
 
-    const scriptPath = path.join(process.cwd(), 'aixplain_examples', 'quiz_generator_agent.py');
+    const scriptPath = path.join(process.cwd(), 'backend', 'quiz_generator_agent.py');
 
     if (!fs.existsSync(scriptPath)) {
       console.error(`Script not found at path: ${scriptPath}`);

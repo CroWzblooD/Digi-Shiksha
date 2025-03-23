@@ -31,7 +31,7 @@ async function ensurePythonProcessRunning() {
     console.log('Starting Python agent process...');
     
     // Get the absolute path to the Python script
-    const scriptPath = path.join(process.cwd(), 'aixplain_examples', 'basic_agent.py');
+    const scriptPath = path.join(process.cwd(), 'backend', 'basic_agent.py');
     console.log(`Script path: ${scriptPath}`);
     
     // Check if the script exists

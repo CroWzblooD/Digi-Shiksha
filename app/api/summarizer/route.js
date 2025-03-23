@@ -33,7 +33,7 @@ async function ensurePythonProcessRunning() {
     console.log('Starting Python summarizer agent process...');
     
     // Get the absolute path to the Python script
-    const scriptPath = path.join(process.cwd(), 'aixplain_examples', 'summarizer_agent.py');
+    const scriptPath = path.join(process.cwd(), 'backend', 'summarizer_agent.py');
     console.log(`Script path: ${scriptPath}`);
     
     // Check if the script exists
