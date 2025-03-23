@@ -89,19 +89,19 @@ const OverviewTab = () => {
     weekly: {
       labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
       values: [120, 180, 150, 210, 190, 140, 220],
-      total: 1210,
+      total: 121,
       change: '+12%'
     },
     monthly: {
       labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
       values: [850, 920, 980, 1050],
-      total: 3800,
+      total: 380,
       change: '+8%'
     },
     yearly: {
       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       values: [3200, 3400, 3600, 3800, 4100, 4300, 4500, 4700, 4900, 5100, 5300, 5500],
-      total: 52400,
+      total: 524,
       change: '+15%'
     }
   };
@@ -146,28 +146,28 @@ const OverviewTab = () => {
     {
       icon: <BsClockHistory className="text-purple-600 text-2xl" />,
       title: "Learning Hours",
-      value: "2,847",
+      value: "28",
       change: "+12.5%",
       bgGradient: "from-purple-500/20 to-purple-500/5"
     },
     {
       icon: <MdAssignment className="text-blue-600 text-2xl" />,
       title: "Assessments Taken",
-      value: "1,238",
+      value: "12",
       change: "+18.2%",
       bgGradient: "from-blue-500/20 to-blue-500/5"
     },
     {
       icon: <BsAward className="text-green-600 text-2xl" />,
       title: "Modules Completed",
-      value: "456",
+      value: "45",
       change: "+15.7%",
       bgGradient: "from-green-500/20 to-green-500/5"
     },
     {
       icon: <FaUserGraduate className="text-amber-600 text-2xl" />,
       title: "Certifications Earned",
-      value: "324",
+      value: "32",
       change: "+21.3%",
       bgGradient: "from-amber-500/20 to-amber-500/5"
     }

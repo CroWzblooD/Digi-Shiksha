@@ -54,6 +54,14 @@ const StudentsTab = () => {
   const [userResponses, setUserResponses] = useState([]);
   const [timer, setTimer] = useState(60);
   const [aiSpeaking, setAiSpeaking] = useState(false);
+
+  const [jobTitle, setJobTitle] = useState('');
+  const [jobDescription, setJobDescription] = useState('');
+  const [companyName, setCompanyName] = useState('');
+  const [companyInfo, setCompanyInfo] = useState('');
+  const [questionType, setQuestionType] = useState('general');
+  const [isGeneratingQuestions, setIsGeneratingQuestions] = useState(false);
+  
   const [transcribedText, setTranscribedText] = useState(''); //
   const [interviewFeedback, setInterviewFeedback] = useState({
     overall: '',
@@ -1179,67 +1187,52 @@ const StudentsTab = () => {
               )}
               
               {interviewStage === 'questions' && (
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-xl font-semibold text-gray-800 flex items-center">
-                      <FaUserTie className="mr-2 text-green-500" /> Interview Questions
-                    </h2>
-                    <button 
-                      onClick={() => setShowInterviewModal(false)}
-                      className="text-gray-400 hover:text-gray-600"
-                    >
-                      <FaTimes className="w-6 h-6" />
-                    </button>
-                  </div>
-                  
-                  <div className="bg-green-50 rounded-lg p-4 mb-6 border border-green-100">
-                    <p className="text-gray-700">
-                      Our AI has generated the following questions based on the job requirements. 
-                      When you're ready, click "Start Interview" to begin.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-white rounded-lg border border-gray-200 p-4 mb-6">
-                    <h3 className="font-medium text-gray-800 mb-3">Your Interview Questions:</h3>
-                    <ol className="space-y-3 pl-5 list-decimal">
-                      {interviewQuestions.map((question, index) => (
-                        <li key={index} className="text-gray-700">{question}</li>
-                      ))}
-                    </ol>
-                  </div>
-                  
-                  <div className="bg-white rounded-lg border border-gray-200 p-4 mb-6">
-                    <h3 className="font-medium text-gray-800 mb-3">Before You Begin:</h3>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li className="flex items-start">
-                        <FaCheck className="text-green-500 mt-1 mr-2 flex-shrink-0" />
-                        Ensure your camera and microphone are working properly
-                      </li>
-                      <li className="flex items-start">
-                        <FaCheck className="text-green-500 mt-1 mr-2 flex-shrink-0" />
-                        Find a quiet place with good lighting
-                      </li>
-                      <li className="flex items-start">
-                        <FaCheck className="text-green-500 mt-1 mr-2 flex-shrink-0" />
-                        You'll have 60 seconds to answer each question
-                      </li>
-                      <li className="flex items-start">
-                        <FaCheck className="text-green-500 mt-1 mr-2 flex-shrink-0" />
-                        The AI will guide you through each question
-                      </li>
-                    </ul>
-                  </div>
-                  
-                  <div className="mt-6 flex justify-end">
-                    <button
-                      onClick={() => startInterview()}
-                      className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors flex items-center"
-                    >
-                      <FaVideo className="mr-2" /> Start Interview
-                    </button>
-                  </div>
-                </div>
-              )}
+  <div className="p-6">
+    <div className="flex items-center justify-between mb-4">
+      <h2 className="text-xl font-semibold text-gray-800 flex items-center">
+        <FaUserTie className="mr-2 text-green-500" /> Interview Questions
+      </h2>
+      <button 
+        onClick={() => setShowInterviewModal(false)}
+        className="text-gray-400 hover:text-gray-600"
+      >
+        <FaTimes className="w-6 h-6" />
+      </button>
+    </div>
+    
+    <div className="bg-green-50 rounded-lg p-4 mb-6 border border-green-100">
+      <p className="text-gray-700">
+        Our AI has generated these questions based on the job requirements at {selectedJob.organization}. 
+        Review them below, then click "Start Interview" to begin.
+      </p>
+    </div>
+    
+    <div className="bg-white rounded-lg border border-gray-200 p-4 mb-6">
+      <h3 className="font-medium text-gray-800 mb-3">Your Interview Questions:</h3>
+      <div className="space-y-4">
+        {interviewQuestions.map((q, index) => (
+          <div key={index} className="border border-gray-200 rounded-lg p-4">
+            <h4 className="font-medium text-gray-800">{index + 1}. {q.question}</h4>
+            <p className="text-sm text-gray-600 mt-2"><span className="font-medium">Explanation:</span> {q.explanation}</p>
+            <div className="mt-2 p-3 bg-gray-50 rounded-lg">
+              <p className="text-sm font-medium text-gray-700">Sample Answer:</p>
+              <p className="text-sm text-gray-600">{q.sample_answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    
+    <div className="mt-6 flex justify-end">
+      <button
+        onClick={() => startInterview()}
+        className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors flex items-center"
+      >
+        <FaVideo className="mr-2" /> Start Interview
+      </button>
+    </div>
+  </div>
+)}
               
               {interviewStage === 'interview' && (
                 <div className="p-6">

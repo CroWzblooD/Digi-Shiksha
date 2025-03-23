@@ -65,7 +65,7 @@ export default function Home() {
           <div className="flex items-center space-x-2">
             <BiLeaf className="text-emerald-500 text-3xl" />
             <span className="text-2xl font-bold bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">
-              LearnSphere
+              Digi Shiksha
             </span>
           </div>
 
@@ -154,7 +154,7 @@ export default function Home() {
                 Bridging the <span className="bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">Educational Gap</span> in Rural India
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                LearnSphere leverages AI technology to provide quality education to rural areas, 
+              Digi Shiksha leverages AI technology to provide quality education to rural areas, 
                 addressing infrastructure limitations, teacher shortages, and outdated teaching methods.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -205,7 +205,7 @@ export default function Home() {
               Powered by <span className="bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">AI Technology</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              LearnSphere integrates aiXplain's AI models to create a unique, scalable solution for rural education challenges.
+            Digi Shiksha integrates aiXplain's AI models to create a unique, scalable solution for rural education challenges.
             </p>
           </motion.div>
 
@@ -350,7 +350,7 @@ export default function Home() {
             variants={fadeInUp}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose <span className="bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">LearnSphere</span>
+              Why Choose <span className="bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">Digi Shiksha</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our platform is designed specifically for the unique challenges of rural education in India.
@@ -458,7 +458,7 @@ export default function Home() {
               What Our <span className="bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">Users Say</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from teachers, students, and community leaders who have experienced the impact of LearnSphere.
+              Hear from teachers, students, and community leaders who have experienced the impact of Digi Shiksha.
             </p>
           </motion.div>
 
@@ -523,7 +523,7 @@ export default function Home() {
               </div>
               
               <p className="text-gray-600 italic mb-4 relative">
-                "Our village has seen a transformation since LearnSphere was introduced. Children who were dropping out are now excited about learning. The community analytics help us identify which students need additional support."
+                "Our village has seen a transformation since Digi Shiksha was introduced. Children who were dropping out are now excited about learning. The community analytics help us identify which students need additional support."
               </p>
               
               <div className="flex text-amber-500 mt-4 relative">
@@ -555,7 +555,7 @@ export default function Home() {
               </div>
               
               <p className="text-gray-600 italic mb-4 relative">
-                "I love learning with LearnSphere! The lessons are in my language and I can study even when there's no internet. The interactive quizzes make learning fun and I've improved my grades a lot."
+                "I love learning with Digi Shiksha! The lessons are in my language and I can study even when there's no internet. The interactive quizzes make learning fun and I've improved my grades a lot."
               </p>
               
               <div className="flex text-amber-500 mt-4 relative">
@@ -585,7 +585,7 @@ export default function Home() {
               Get in <span className="bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">Touch</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Interested in bringing LearnSphere to your community? Our AI assistant is ready to help you.
+              Interested in bringing Digi Shiksha to your community? Our AI assistant is ready to help you.
             </p>
           </motion.div>
 
@@ -616,14 +616,14 @@ export default function Home() {
                     
                     <div className="p-4 bg-gray-50 rounded-xl border border-gray-100">
                       <p className="text-gray-600 text-sm italic">
-                        "Hello! I'm your AI assistant. I can help answer questions about LearnSphere and connect you with our team. What would you like to know?"
+                        "Hello! I'm your AI assistant. I can help answer questions about Digi Shiksha and connect you with our team. What would you like to know?"
                       </p>
                     </div>
                     
                     <div className="space-y-3">
                       <h4 className="font-medium text-gray-800">Quick Questions:</h4>
                       <button className="w-full text-left px-4 py-2 bg-green-50 hover:bg-green-100 rounded-lg text-green-700 text-sm transition-colors">
-                        How can I implement LearnSphere?
+                        How can I implement Digi Shiksha?
                       </button>
                       <button className="w-full text-left px-4 py-2 bg-green-50 hover:bg-green-100 rounded-lg text-green-700 text-sm transition-colors">
                         What's the cost structure?
@@ -746,7 +746,7 @@ export default function Home() {
                   <FaGraduationCap className="text-white text-xl" />
                 </div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent">
-                  LearnSphere
+                Digi Shiksha
                 </span>
               </div>
               <p className="text-gray-400 mb-6">
@@ -827,7 +827,7 @@ export default function Home() {
           
           <div className="pt-8 mt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              © 2025 LearnSphere. All rights reserved.
+              © 2025 Digi Shiksha. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-6">
               <a href="#" className="text-gray-500 hover:text-green-400 text-sm transition-colors">Privacy Policy</a>

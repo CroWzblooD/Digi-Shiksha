@@ -18,11 +18,10 @@ import { BsRobot, BsLightningCharge } from 'react-icons/bs';
 const Sidebar = ({ activeTab, setActiveTab }) => {
   const navItems = [
     { id: 'Dashboard', label: 'Dashboard', icon: <RiDashboardLine /> },
-    { id: 'AILearningEngine', label: 'AI Learning Engine', icon: <BsRobot /> },
+    { id: 'AILearningEngine', label: 'AIXplain Assistant', icon: <BsRobot /> },
     { id: 'RegionalContent', label: 'Regional Content', icon: <RiTranslate /> },
     { id: 'OpportunityNavigator', label: 'Opportunity Navigator', icon: <FaUsers /> },
-    { id: 'AdaptiveAssessments', label: 'Adaptive Assessments', icon: <FaChalkboardTeacher /> },
-    { id: 'AIXplain', label: 'AIXplain Assistant', icon: <FaRobot /> },
+    { id: 'ContentGenerator', label: 'Content Generator ', icon: <FaChalkboardTeacher /> },
   ];
 
   return (

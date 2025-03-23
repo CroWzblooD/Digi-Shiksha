@@ -1,0 +1,1327 @@
+2025-03-18 16:37:35,162 - Starting AIXplain agent
+2025-03-18 16:37:35,162 - [ERROR]: failed to get Gemini model id
+2025-03-18 17:41:11,864 - Starting AIXplain agent
+2025-03-18 17:41:11,864 - [ERROR]: failed to get Gemini model id
+2025-03-18 17:44:05,365 - Starting AIXplain agent
+2025-03-18 17:44:05,366 - [ERROR]: failed to get Gemini model id
+2025-03-18 17:50:33,612 - Starting AIXplain agent
+2025-03-18 17:50:33,612 - [ERROR]: failed to get Gemini model id
+2025-03-18 17:57:10,241 - Starting AIXplain agent
+2025-03-18 17:57:10,241 - [ERROR]: failed to get Gemini model id
+2025-03-18 17:59:33,283 - Starting AIXplain agent
+2025-03-18 17:59:33,284 - [ERROR]: failed to get Gemini model id
+2025-03-18 19:17:56,586 - Received request 1742305676585: hi...
+2025-03-18 19:18:35,325 - Received request 1742305715324: hello...
+2025-03-18 19:23:26,408 - Received request 1742306006407: hello...
+2025-03-18 19:23:26,409 - Error running agent: name 'OutputFormat' is not defined
+2025-03-18 19:26:07,280 - Received request 1742306167277: hello...
+2025-03-18 19:29:34,487 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:35,591 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:29:35,595 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:36,650 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:29:36,658 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:37,712 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:29:37,717 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:38,768 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:29:38,770 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:39,906 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 19:29:39,908 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:41,043 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:29:41,043 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:42,105 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:29:43,180 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:44,177 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:29:44,180 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:29:45,210 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:29:45,214 - Received request 1742306372799: hello...
+2025-03-18 19:29:46,290 - Polling for Model: Start polling for model_process
+2025-03-18 19:30:20,652 - Received request 1742306420651: who is the pm of india...
+2025-03-18 19:30:21,792 - Polling for Model: Start polling for model_process
+2025-03-18 19:30:56,388 - Received request 1742306456387: tell me a joke...
+2025-03-18 19:30:57,439 - Polling for Model: Start polling for model_process
+2025-03-18 19:31:27,105 - Received request 1742306487104: Create a 5-question quiz about internet safety with multiple choice answers....
+2025-03-18 19:31:28,209 - Polling for Model: Start polling for model_process
+2025-03-18 19:36:46,330 - Received request 1742306806328: Simplify this content for rural students with basic literacy: Financial services are essential for e...
+2025-03-18 19:36:47,565 - Polling for Model: Start polling for model_process
+2025-03-18 19:48:43,019 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:44,109 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:48:44,111 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:45,110 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:48:45,119 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:46,170 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:48:46,172 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:47,221 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:48:47,223 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:48,216 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 19:48:48,217 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:49,269 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:48:49,271 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:50,348 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:48:51,336 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:52,378 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:48:52,381 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:48:53,383 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:50:48,183 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:49,170 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:50:49,170 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:50,200 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:50:50,210 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:51,245 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:50:51,247 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:52,220 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:50:52,221 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:53,268 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 19:50:53,270 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:54,319 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:50:54,320 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:55,315 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:50:56,324 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:57,311 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 19:50:57,312 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 19:50:58,348 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 19:50:58,351 - Received request 1742307650572: hello...
+2025-03-18 19:50:59,404 - Polling for Model: Start polling for model_process
+2025-03-18 19:51:36,475 - Received request 1742307696475: suggest me some latest movie in pvr i can watch with my friends...
+2025-03-18 19:51:37,499 - Polling for Model: Start polling for model_process
+2025-03-18 19:56:09,173 - Received request 1742307969173: which one movie should i watch tomorrow from above 5 u suggested...
+2025-03-18 19:56:10,253 - Polling for Model: Start polling for model_process
+2025-03-18 20:14:01,920 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:02,925 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:14:02,926 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:03,903 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:14:03,909 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:04,972 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:14:04,973 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:05,969 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:14:05,974 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:06,952 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 20:14:06,953 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:08,032 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:14:08,033 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:09,045 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:14:10,065 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:11,050 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:14:11,051 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:14:12,104 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:14:12,107 - Received request 1742309044103: hello...
+2025-03-18 20:14:13,165 - Polling for Model: Start polling for model_process
+2025-03-18 20:14:45,201 - Received request 1742309085201: suggest me any resturant in delhi i can eat cheap but quality food...
+2025-03-18 20:14:46,241 - Polling for Model: Start polling for model_process
+2025-03-18 20:15:51,085 - Received request 1742309151085: Please respond in Hindi language: is india have its own nuclear weapons...
+2025-03-18 20:15:52,083 - Polling for Model: Start polling for model_process
+2025-03-18 20:16:06,992 - Error processing request: 'charmap' codec can't encode characters in position 0-2: character maps to <undefined>
+2025-03-18 20:17:21,668 - Received request 1742309241667: Please respond in Hindi language: 
+हैलो आप कैसे हैं...
+2025-03-18 20:17:22,744 - Polling for Model: Start polling for model_process
+2025-03-18 20:17:30,049 - Error processing request: 'charmap' codec can't encode characters in position 0-5: character maps to <undefined>
+2025-03-18 20:20:25,593 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:26,681 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:20:26,682 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:27,709 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:20:27,717 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:28,787 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:20:28,789 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:29,823 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:20:29,824 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:30,918 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 20:20:30,919 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:31,959 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:20:31,961 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:33,014 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:20:34,101 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:35,223 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:20:35,226 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:20:36,345 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:20:36,348 - Received request 1742309428330: Please respond in Hindi language: \u0939\u0948\u0932\u094b \u0906\u092a \u0915\u0948\u0938\u0947 \u0939\u0948\u0902...
+2025-03-18 20:20:37,382 - Polling for Model: Start polling for model_process
+2025-03-18 20:21:16,993 - Received request 1742309476992: Please respond in Hindi language: me bhi acha hu or ky kar rhe ho aajkl...
+2025-03-18 20:21:18,060 - Polling for Model: Start polling for model_process
+2025-03-18 20:21:39,375 - Received request 1742309499375: Please respond in Hindi language: koi kahani suna do yaar...
+2025-03-18 20:21:40,514 - Polling for Model: Start polling for model_process
+2025-03-18 20:22:15,279 - Received request 1742309535278: Please respond in Tamil language: koi kahani suna do acha sa...
+2025-03-18 20:22:16,380 - Polling for Model: Start polling for model_process
+2025-03-18 20:25:10,550 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:25:12,700 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:25:12,702 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:25:38,553 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:25:38,571 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:25:49,363 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:25:49,366 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:25:50,591 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:25:50,592 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:25:53,025 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 20:25:53,026 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:26:09,310 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:26:09,310 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:26:10,366 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:26:12,113 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:26:27,115 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 20:26:27,117 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 20:26:36,711 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 20:26:36,717 - Received request 1742309700414: Please respond in Telugu language: koi kahani suna do acha sa...
+2025-03-18 20:26:38,006 - Polling for Model: Start polling for model_process
+2025-03-18 20:27:02,747 - Received request 1742309773376: Please respond in Telugu language: koi kahani suna do acha sa...
+2025-03-18 20:28:03,472 - Polling for Model: Start polling for model_process
+2025-03-18 20:28:19,434 - Received request 1742309841299: Please respond in Marathi language: koi kahani suna do acha sa...
+2025-03-18 20:28:20,548 - Polling for Model: Start polling for model_process
+2025-03-18 20:44:09,544 - Received request 1742310849543: Please respond in Gujarati language: \u0a8f\u0a95 \u0ab8\u0aae\u0aaf\u0ac7, \u0a8f\u0a95 \u0aa8\u0abe\u0aa8\u0abe \u0a97\u0abe\u0aae\u0aae\u0abe\u0a82 \u0a8f\u0a95 \u0aa6\u0aaf\u0abe\u0ab3\u0ac1 \u0aae\u0abe\u0aa3\u0ab8 \u0ab0\u0ab9\u0ac7\u0aa4\u0acb \u0ab9\u0aa4\u0acb. \u0aa4\u0ac7 \u0ab9\u0a82\u0aae\u0ac7\u0ab6\u0abe \u0aac\u0ac0\u0a9c\u0abe...
+2025-03-18 20:44:10,634 - Polling for Model: Start polling for model_process
+2025-03-18 20:46:21,562 - Received request 1742310981561: Please respond in Marathi language: \u090f\u0915\u0947\u0915\u093e\u0933\u0940 \u090f\u0915\u093e \u091b\u094b\u091f\u094d\u092f\u093e \u0917\u093e\u0935\u093e\u0924 \u090f\u0915 \u0926\u092f\u093e\u0933\u0942 \u092e\u093e\u0923\u0942\u0938 \u0930\u093e\u0939\u0924 \u0939\u094b\u0924\u093e. \u0924\u094b \u0928\u0947\u0939\u092e\u0940\u091a \u0907\u0924\u0930...
+2025-03-18 20:46:22,672 - Polling for Model: Start polling for model_process
+2025-03-18 20:50:39,471 - Received request 1742311239470: Please respond in Marathi language: or koi kahani h sunane ko...
+2025-03-18 20:50:40,677 - Polling for Model: Start polling for model_process
+2025-03-18 20:51:19,237 - Received request 1742311279237: Please respond in Marathi language: tell me another story...
+2025-03-18 20:51:20,322 - Polling for Model: Start polling for model_process
+2025-03-18 20:53:16,658 - Received request 1742311396643: Please respond in Marathi language: \u0c28\u0c3e\u0c15\u0c41 \u0c07\u0c02\u0c15\u0c4b \u0c15\u0c25 \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c41....
+2025-03-18 20:53:17,715 - Polling for Model: Start polling for model_process
+2025-03-18 21:11:40,241 - Received request 1742312500238: Please respond in Marathi language: generate a image where men holding book...
+2025-03-18 21:11:41,344 - Polling for Model: Start polling for model_process
+2025-03-18 21:25:39,392 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:40,409 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:25:40,410 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:41,436 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:25:41,439 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:42,412 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:25:42,414 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:43,487 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:25:43,488 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:44,500 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 21:25:44,502 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:45,500 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:25:45,500 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:46,558 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:25:47,602 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:48,588 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:25:48,590 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:25:49,661 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:25:49,671 - Received request 1742313341718: Please respond in Marathi language: Generate an image about: generate a image where men holding book...
+2025-03-18 21:25:50,690 - Polling for Model: Start polling for model_process
+2025-03-18 21:27:20,119 - Received request 1742313413920: Please respond in Marathi language: Generate an image about: generate a image where men holding book...
+2025-03-18 21:27:21,509 - Polling for Model: Start polling for model_process
+2025-03-18 21:28:08,577 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:09,646 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:28:09,647 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:10,706 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:28:10,709 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:11,727 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:28:11,727 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:12,784 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:28:12,785 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:13,757 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 21:28:13,757 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:14,746 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:28:14,747 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:15,838 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:28:16,936 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:17,920 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:28:17,921 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:28:19,013 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:28:19,016 - Received request 1742313491298: Generate an image about: generate a image where men holding book. Return the image URL in the format...
+2025-03-18 21:28:20,121 - Polling for Model: Start polling for model_process
+2025-03-18 21:37:46,554 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:47,630 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:37:47,631 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:48,639 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:37:48,643 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:49,665 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:37:49,667 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:50,662 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:37:50,663 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:51,680 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 21:37:51,680 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:52,779 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:37:52,779 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:53,917 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:37:55,083 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:56,092 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:37:56,094 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:37:57,127 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:37:57,144 - Received request 1742314064009: Generate an image about: generate a image where people laugh. Return the image URL in the format: [I...
+2025-03-18 21:37:57,144 - Generating image for prompt: Generate an image about: generate a image where people laugh. Return the image URL in the format: [I...
+2025-03-18 21:37:58,146 - Polling for Model: Start polling for model_process
+2025-03-18 21:47:40,527 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:41,696 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:47:41,696 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:42,821 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:47:42,826 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:43,979 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:47:43,983 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:45,069 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:47:45,071 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:46,080 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-18 21:47:46,081 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:47,138 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:47:47,140 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:48,215 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:47:49,256 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:50,374 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-18 21:47:50,375 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 5da7fcdfcb2af6bba4060f54040d4c7552d9a6aa690ec121b70fcf9f1e825516', 'Content-Type': 'application/json'}
+2025-03-18 21:47:51,727 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-18 21:47:51,734 - Received request 1742314662940: Generate an image about: generate a image of dog. Return the image URL in the format: [IMAGE_URL:url...
+2025-03-18 21:47:51,734 - Generating image for prompt: Generate an image about: generate a image of dog. Return the image URL in the format: [IMAGE_URL:url...
+2025-03-18 21:47:53,077 - Polling for Model: Start polling for model_process
+2025-03-18 21:49:48,881 - Received request 1742314788880: Generate an image about: generate a image where people is standing in indian prade. Return the image...
+2025-03-18 21:49:48,881 - Generating image for prompt: Generate an image about: generate a image where people is standing in indian prade. Return the image...
+2025-03-18 21:49:50,089 - Polling for Model: Start polling for model_process
+2025-03-18 21:50:56,535 - Received request 1742314856535: who is the president of india...
+2025-03-18 21:50:57,618 - Polling for Model: Start polling for model_process
+2025-03-18 21:51:26,804 - Received request 1742314886804: Please respond in Bengali language: president of india kaun h...
+2025-03-18 21:51:27,877 - Polling for Model: Start polling for model_process
+2025-03-18 21:52:07,938 - Received request 1742314927938: Please respond in Bengali language: Generate an image about: generate a image of a warship. Return t...
+2025-03-18 21:52:07,938 - Generating image for prompt: Please respond in Bengali language: Generate an image about: generate a image of a warship. Return t...
+2025-03-18 21:52:09,139 - Polling for Model: Start polling for model_process
+2025-03-18 21:57:05,562 - Received request 1742315225561: Generate an image about: generate a image of car. Return the image URL in the format: [IMAGE_URL:url...
+2025-03-18 21:57:05,562 - Generating image for prompt: Generate an image about: generate a image of car. Return the image URL in the format: [IMAGE_URL:url...
+2025-03-18 21:57:06,773 - Polling for Model: Start polling for model_process
+2025-03-18 22:26:21,946 - Received request 1742316981943: Generate an image about: generate a image of hack for india. Return the image URL in the format: [IM...
+2025-03-18 22:26:21,947 - Generating image for prompt: Generate an image about: generate a image of hack for india. Return the image URL in the format: [IM...
+2025-03-18 22:26:23,189 - Polling for Model: Start polling for model_process
+2025-03-19 01:08:34,640 - Received request 1742326714620: Create a 5-question quiz about: Create a 5-question quiz about internet safety with multiple choice ...
+2025-03-19 01:08:34,647 - Generating image for prompt: Create a 5-question quiz about: Create a 5-question quiz about internet safety with multiple choice ...
+2025-03-19 01:08:35,701 - Polling for Model: Start polling for model_process
+2025-03-19 01:08:35,707 - Polling for Model: polling for model_process: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-03-19 01:08:35,707 - Polling for Model: Final status of polling for model_process: No response in 300 seconds - ModelResponse(status=FAILED, error_message='No response from the service.')
+2025-03-19 01:08:35,801 - Agent Run: Error in running for model_process: 'str' object has no attribute 'get'
+2025-03-19 01:08:35,803 - Error extracting content: 'NoneType' object has no attribute 'replace'
+2025-03-19 01:08:46,674 - Received request 1742326726672: Create a 5-question quiz about: Create a 5-question quiz about internet safety with multiple choice ...
+2025-03-19 01:08:46,674 - Generating image for prompt: Create a 5-question quiz about: Create a 5-question quiz about internet safety with multiple choice ...
+2025-03-19 01:08:47,693 - Polling for Model: Start polling for model_process
+2025-03-19 01:08:47,695 - Polling for Model: polling for model_process: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-03-19 01:08:47,695 - Polling for Model: Final status of polling for model_process: No response in 300 seconds - ModelResponse(status=FAILED, error_message='No response from the service.')
+2025-03-19 01:08:47,696 - Agent Run: Error in running for model_process: 'str' object has no attribute 'get'
+2025-03-19 01:08:47,696 - Error extracting content: 'NoneType' object has no attribute 'replace'
+2025-03-19 01:09:05,735 - Received request 1742326745734: Create a voice script about: Simplify this content for rural students with basic literacy: Financial...
+2025-03-19 01:09:05,735 - Generating image for prompt: Create a voice script about: Simplify this content for rural students with basic literacy: Financial...
+2025-03-19 01:09:06,793 - Polling for Model: Start polling for model_process
+2025-03-19 01:09:06,793 - Polling for Model: polling for model_process: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-03-19 01:09:06,793 - Polling for Model: Final status of polling for model_process: No response in 300 seconds - ModelResponse(status=FAILED, error_message='No response from the service.')
+2025-03-19 01:09:06,794 - Agent Run: Error in running for model_process: 'str' object has no attribute 'get'
+2025-03-19 01:09:06,794 - Error extracting content: 'NoneType' object has no attribute 'replace'
+2025-03-19 01:09:17,482 - Received request 1742326757481: Simplify this content for rural students with basic literacy: Financial services are essential for e...
+2025-03-19 01:09:18,471 - Polling for Model: Start polling for model_process
+2025-03-19 01:09:18,473 - Polling for Model: polling for model_process: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-03-19 01:09:18,473 - Polling for Model: Final status of polling for model_process: No response in 300 seconds - ModelResponse(status=FAILED, error_message='No response from the service.')
+2025-03-19 01:09:18,477 - Agent Run: Error in running for model_process: 'str' object has no attribute 'get'
+2025-03-19 01:09:18,478 - Error extracting content: 'NoneType' object has no attribute 'replace'
+2025-03-19 01:09:41,624 - Received request 1742326781624: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-19 01:09:41,624 - Generating image for prompt: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-19 01:09:42,632 - Polling for Model: Start polling for model_process
+2025-03-19 01:09:42,632 - Polling for Model: polling for model_process: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-03-19 01:09:42,632 - Polling for Model: Final status of polling for model_process: No response in 300 seconds - ModelResponse(status=FAILED, error_message='No response from the service.')
+2025-03-19 01:09:42,632 - Agent Run: Error in running for model_process: 'str' object has no attribute 'get'
+2025-03-19 01:09:42,632 - Error extracting content: 'NoneType' object has no attribute 'replace'
+2025-03-19 01:10:12,190 - Received request 1742326809712: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-19 01:10:12,190 - Generating image for prompt: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-19 01:10:51,179 - Received request 1742326851178: hello...
+2025-03-19 01:11:09,889 - Received request 1742326869888: hello...
+2025-03-19 01:11:35,635 - Received request 1742326895634: hi...
+2025-03-19 01:12:39,967 - Received request 1742326959967: hi...
+2025-03-19 01:13:00,883 - Received request 1742326980888: who is president of india...
+2025-03-19 01:16:00,526 - Received request 1742327160523: hello...
+2025-03-19 01:19:03,720 - Received request 1742327343720: hi...
+2025-03-19 01:20:39,599 - Received request 1742327439597: hi...
+2025-03-19 01:20:54,091 - Received request 1742327454090: hi...
+2025-03-19 01:21:00,553 - Received request 1742327460552: hi...
+2025-03-19 01:21:35,355 - Received request 1742327495354: Please respond in Hindi language: hello...
+2025-03-19 01:21:44,304 - Received request 1742327504304: Please respond in Hindi language: hil...
+2025-03-19 01:22:22,836 - Received request 1742327542837: Please respond in Hindi language: hi...
+2025-03-19 01:22:44,853 - Received request 1742327564853: Please respond in Hindi language: hi...
+2025-03-19 01:23:01,989 - Received request 1742327581989: Please respond in Hindi language: hi...
+2025-03-19 01:23:15,729 - Received request 1742327595729: Please respond in Hindi language: hi...
+2025-03-19 01:23:25,454 - Received request 1742327605456: Please respond in Hindi language: hello...
+2025-03-19 01:23:35,712 - Received request 1742327615713: Please respond in Hindi language: hi'...
+2025-03-19 01:23:48,732 - Received request 1742327628732: hi...
+2025-03-19 01:24:27,573 - Received request 1742327667573: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-19 01:24:27,574 - Generating image for prompt: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-19 01:24:51,736 - Received request 1742327691736: Simplify this content for rural students with basic literacy: Financial services are essential for e...
+2025-03-19 01:26:50,387 - Received request 1742327810386: hello...
+2025-03-19 01:27:03,623 - Received request 1742327823623: Write a voice-based learning script about women safety for students without internet access....
+2025-03-19 01:27:51,198 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:27:52,292 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-19 01:27:52,298 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:27:53,375 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-19 01:27:53,380 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:27:54,410 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-19 01:27:54,411 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:27:55,503 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-19 01:27:55,507 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:27:56,561 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-19 01:27:56,561 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:27:57,613 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-19 01:27:57,618 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:27:58,690 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-19 01:27:59,759 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:28:00,839 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-19 01:28:00,839 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-19 01:28:02,001 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-19 01:28:02,009 - Received request 1742327873963: hi...
+2025-03-19 01:28:03,219 - Polling for Model: Start polling for model_process
+2025-03-19 01:28:14,878 - Received request 1742327894878: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-19 01:28:14,878 - Generating image for prompt: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-19 01:28:15,993 - Polling for Model: Start polling for model_process
+2025-03-20 09:26:42,174 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:43,192 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 09:26:43,192 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:44,253 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 09:26:44,323 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:45,325 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 09:26:45,325 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:46,382 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 09:26:46,384 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:47,436 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 09:26:47,437 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:48,426 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 09:26:48,427 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:49,584 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 09:26:50,660 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:51,661 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 09:26:51,663 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 09:26:52,655 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 09:26:52,663 - Received request 1742442996833: hello good morning...
+2025-03-20 09:26:53,744 - Polling for Model: Start polling for model_process
+2025-03-20 12:43:02,703 - Received request 1742454781968: hi...
+2025-03-20 12:43:31,486 - Received request 1742454811485: ho...
+2025-03-20 12:43:39,386 - Received request 1742454819386: hi...
+2025-03-20 12:44:09,809 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:10,900 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 12:44:10,900 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:11,947 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 12:44:11,961 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:13,030 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 12:44:13,030 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:14,120 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 12:44:14,123 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:15,183 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 12:44:15,183 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:16,159 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 12:44:16,161 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:17,218 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 12:44:18,261 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:19,254 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 12:44:19,256 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 12:44:20,252 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 12:44:20,266 - Received request 1742454852647: hi...
+2025-03-20 12:44:21,321 - Polling for Model: Start polling for model_process
+2025-03-20 15:35:27,179 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:28,633 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:35:28,634 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:31,465 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:35:31,466 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:33,213 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:35:33,240 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:34,289 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:35:34,291 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:35,653 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:35:35,654 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:37,190 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:35:37,191 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:38,492 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 15:35:38,492 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:40,181 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:35:40,184 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:42,239 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:35:42,239 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:44,340 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:35:45,832 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:48,417 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:35:48,420 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:49,585 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:35:49,587 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:35:51,054 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:35:51,065 - Received request 1742465125049: hi...
+2025-03-20 15:35:51,065 - Is voice input: False
+2025-03-20 15:35:52,610 - Polling for Model: Start polling for model_process
+2025-03-20 15:40:31,590 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:32,655 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:40:32,655 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:33,755 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:40:33,756 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:34,852 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:40:34,859 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:35,996 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:40:35,998 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:37,042 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:40:37,043 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:38,026 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:40:38,030 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:39,245 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 15:40:39,246 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:40,252 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:40:40,253 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:41,456 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:40:41,457 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:42,545 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:40:43,651 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:44,743 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:40:44,744 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:45,827 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:40:45,828 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:40:46,951 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:40:46,954 - Received request 1742465434383: ...
+2025-03-20 15:40:46,954 - Is voice input: True
+2025-03-20 15:40:46,954 - Processing voice input...
+2025-03-20 15:40:48,926 - Polling for Model: Start polling for model_process
+2025-03-20 15:40:55,985 - Transcribed text: I'm sorry, but it seems that your last comment contains a long string of characters that doesn't provide clear context or a question. Could you please clarify or provide more details about what you would like to know?
+2025-03-20 15:40:57,071 - Polling for Model: Start polling for model_process
+2025-03-20 15:41:20,793 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:21,940 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:41:21,943 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:23,028 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:41:23,028 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:24,031 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:41:24,044 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:25,226 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:41:25,228 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:26,327 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:41:26,329 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:27,427 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:41:27,430 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:28,530 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 15:41:28,532 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:29,645 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:41:29,646 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:30,723 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:41:30,723 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:31,820 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:41:32,932 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:34,031 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:41:34,031 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:35,126 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:41:35,126 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:41:36,224 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:41:36,231 - Received request 1742465483648: ...
+2025-03-20 15:41:36,231 - Is voice input: True
+2025-03-20 15:41:36,231 - Processing voice input...
+2025-03-20 15:41:37,766 - Polling for Model: Start polling for model_process
+2025-03-20 15:41:43,069 - Transcribed text: I'm sorry, but I cannot process the input you provided as it appears to be a long string of encoded data or a hash. If you have a specific question or topic you'd like to discuss, please provide that information, and I'll be happy to assist you!
+2025-03-20 15:41:44,146 - Polling for Model: Start polling for model_process
+2025-03-20 15:49:16,677 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:17,795 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:49:17,796 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:18,896 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:49:18,896 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:19,989 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:49:20,002 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:21,090 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:49:21,093 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:22,192 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:49:22,195 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:23,288 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:49:23,290 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:24,386 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 15:49:24,386 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:25,487 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:49:25,488 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:26,591 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:49:26,592 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:27,686 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 15:49:28,801 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:29,890 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 15:49:29,892 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:30,986 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 15:49:30,987 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 15:49:31,975 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:01:04,605 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:06,055 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:01:06,059 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:07,185 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:01:07,186 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:08,430 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:01:08,443 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:09,552 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:01:09,552 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:10,652 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:01:10,654 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:11,824 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:01:11,825 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:12,835 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 16:01:12,837 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:14,022 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:01:14,022 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:15,176 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:01:15,176 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:16,432 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:01:17,534 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:18,656 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:01:18,657 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:19,727 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:01:19,730 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:01:20,798 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:01:20,805 - Received request 1742466667044: ...
+2025-03-20 16:01:20,805 - Is voice input: True
+2025-03-20 16:01:20,805 - Processing voice input...
+2025-03-20 16:01:20,805 - Successfully decoded audio data, size: 57464 bytes
+2025-03-20 16:01:22,590 - Polling for Model: Start polling for model_process
+2025-03-20 16:01:27,973 - Transcribed text: I'm sorry, but I cannot process the input you provided as it appears to be encoded or encrypted data. If you have a specific question or topic you'd like to discuss, please provide that information in a clear format.
+2025-03-20 16:01:29,017 - Polling for Model: Start polling for model_process
+2025-03-20 16:19:03,164 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:04,303 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:19:04,304 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:05,343 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:19:05,345 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:06,374 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:19:06,388 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:07,485 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:19:07,486 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:08,499 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:19:08,502 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:09,522 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:19:09,525 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:10,593 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 16:19:10,593 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:11,641 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:19:11,641 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:12,642 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:19:12,643 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:13,710 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:19:14,720 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:15,795 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:19:15,797 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:16,838 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:19:16,839 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:19:17,868 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:19:17,877 - Received request 1742467745799: ...
+2025-03-20 16:19:17,877 - Is voice input: True
+2025-03-20 16:19:17,877 - Processing voice input...
+2025-03-20 16:19:17,879 - Successfully decoded audio data, size: 42953 bytes
+2025-03-20 16:19:19,619 - Polling for Model: Start polling for model_process
+2025-03-20 16:19:24,594 - Transcribed text: I'm sorry, but I cannot process the information you provided as it appears to be encoded or not in a recognizable format. Please provide a clear question or statement for me to assist you.
+2025-03-20 16:19:25,668 - Polling for Model: Start polling for model_process
+2025-03-20 16:24:11,564 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:12,618 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:24:12,618 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:13,606 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:24:13,608 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:14,711 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:24:14,719 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:15,774 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:24:15,774 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:16,903 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:24:16,906 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:17,927 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:24:17,928 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:18,981 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 16:24:18,983 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:20,008 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:24:20,009 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:21,017 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:24:21,018 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:22,088 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:24:23,191 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:24,355 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:24:24,356 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:25,488 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:24:25,491 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:24:26,517 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:24:26,527 - Received request 1742468054192: Feature=chat, Language=English
+2025-03-20 16:24:26,527 - Request includes voice input
+2025-03-20 16:24:26,527 - Processing voice input...
+2025-03-20 16:24:26,527 - Error running agent: name 'process_audio_data' is not defined
+2025-03-20 16:26:15,130 - Received request 1742468175129: Feature=chat, Language=English
+2025-03-20 16:26:15,130 - Request includes voice input
+2025-03-20 16:26:15,130 - Processing voice input...
+2025-03-20 16:26:15,130 - Error running agent: name 'process_audio_data' is not defined
+2025-03-20 16:26:23,077 - Received request 1742468183077: Feature=chat, Language=English
+2025-03-20 16:26:23,077 - Request includes voice input
+2025-03-20 16:26:23,077 - Processing voice input...
+2025-03-20 16:26:23,077 - Error running agent: name 'process_audio_data' is not defined
+2025-03-20 16:26:31,356 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:32,361 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:26:32,362 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:33,449 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:26:33,450 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:34,606 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:26:34,610 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:35,628 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:26:35,630 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:36,651 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:26:36,653 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:37,693 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:26:37,695 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:38,658 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 16:26:38,659 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:39,791 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:26:39,793 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:40,848 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:26:40,849 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:41,828 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:26:42,919 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:43,944 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 16:26:43,946 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:44,983 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 16:26:44,986 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 16:26:46,035 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 16:26:46,040 - Received request 1742468194087: Feature=chat, Language=English
+2025-03-20 16:26:46,040 - Prompt: hello...
+2025-03-20 16:26:47,146 - Polling for Model: Start polling for model_process
+2025-03-20 16:56:29,544 - Received request 1742469989539: Feature=chat, Language=English
+2025-03-20 16:56:29,546 - Prompt: generate a image of bird...
+2025-03-20 16:56:29,546 - Generating image for prompt: generate a image of bird...
+2025-03-20 16:56:30,759 - Polling for Model: Start polling for model_process
+2025-03-20 16:57:36,119 - Received request 1742470051576: Feature=chat, Language=English
+2025-03-20 16:57:36,119 - Prompt: generate a image of bird...
+2025-03-20 16:57:36,119 - Generating image for prompt: generate a image of bird...
+2025-03-20 16:57:37,178 - Polling for Model: Start polling for model_process
+2025-03-20 16:59:08,472 - Received request 1742470089756: Feature=chat, Language=English
+2025-03-20 16:59:08,472 - Prompt: generate image of superman...
+2025-03-20 16:59:08,472 - Generating image for prompt: generate image of superman...
+2025-03-20 16:59:09,478 - Polling for Model: Start polling for model_process
+2025-03-20 17:00:01,944 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:03,028 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 17:00:03,029 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:04,129 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 17:00:04,132 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:05,211 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 17:00:05,226 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:06,232 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 17:00:06,237 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:07,324 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 17:00:07,325 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:08,367 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 17:00:08,370 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:09,522 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-20 17:00:09,522 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:10,841 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 17:00:10,842 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:11,837 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 17:00:11,837 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:12,889 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 17:00:13,996 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:15,067 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-20 17:00:15,068 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:16,186 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-20 17:00:16,188 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-20 17:00:17,231 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-20 17:00:17,238 - Received request 1742470204385: Generate an image about: generate image of superman. Return the image URL in the format: [IMAGE_URL:...
+2025-03-20 17:00:17,239 - Is voice input: False
+2025-03-20 17:00:17,239 - Generating image for prompt: Generate an image about: generate image of superman. Return the image URL in the format: [IMAGE_URL:...
+2025-03-20 17:00:18,234 - Polling for Model: Start polling for model_process
+2025-03-20 17:00:33,252 - Received request 1742470122211: Feature=chat, Language=English
+2025-03-20 17:00:33,252 - Prompt: mitochondria...
+2025-03-20 17:00:34,321 - Polling for Model: Start polling for model_process
+2025-03-20 17:02:04,691 - Received request 1742470300159: hi...
+2025-03-20 17:02:04,691 - Is voice input: False
+2025-03-20 17:02:05,754 - Polling for Model: Start polling for model_process
+2025-03-20 17:02:21,479 - Received request 1742470341479: hi...
+2025-03-20 17:02:21,479 - Is voice input: False
+2025-03-20 17:02:22,585 - Polling for Model: Start polling for model_process
+2025-03-20 17:02:38,917 - Received request 1742470358917: Generate an image about: draw image of mitochondria. Return the image URL in the format: [IMAGE_URL:...
+2025-03-20 17:02:38,917 - Is voice input: False
+2025-03-20 17:02:38,917 - Generating image for prompt: Generate an image about: draw image of mitochondria. Return the image URL in the format: [IMAGE_URL:...
+2025-03-20 17:02:39,964 - Polling for Model: Start polling for model_process
+2025-03-20 17:02:46,001 - Single Poll for Model: Error of polling for model_process: 'completed'
+2025-03-20 17:04:34,394 - Received request 1742470474394: Write a voice-based learning script about women safety for students without internet access....
+2025-03-20 17:04:34,395 - Is voice input: False
+2025-03-20 17:04:35,534 - Polling for Model: Start polling for model_process
+2025-03-20 17:06:54,396 - Received request 1742470614396: draw a mitochondria with detail label for exam study purpos...
+2025-03-20 17:06:54,396 - Is voice input: False
+2025-03-20 17:06:54,396 - Generating image for prompt: draw a mitochondria with detail label for exam study purpos...
+2025-03-20 17:06:55,499 - Polling for Model: Start polling for model_process
+2025-03-21 12:12:39,157 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:40,570 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 12:12:40,571 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:41,625 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 12:12:41,626 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:42,718 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 12:12:42,727 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:43,829 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 12:12:43,830 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:44,846 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 12:12:44,846 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:45,906 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 12:12:45,907 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:47,046 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 12:12:47,047 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:48,319 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 12:12:48,320 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:49,392 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 12:12:49,392 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:50,474 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 12:12:51,676 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:52,748 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 12:12:52,748 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:53,767 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 12:12:53,768 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 12:12:54,756 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 12:12:54,762 - Received request 1742539351894: Please respond in Hindi language: Create a comprehensive summary of the following content in Hindi l...
+2025-03-21 12:12:54,763 - Is voice input: False
+2025-03-21 12:12:54,763 - Generating image for prompt: Please respond in Hindi language: Create a comprehensive summary of the following content in Hindi l...
+2025-03-21 12:12:55,964 - Polling for Model: Start polling for model_process
+2025-03-21 15:44:38,934 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:40,094 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 15:44:40,095 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:41,177 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 15:44:41,178 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:42,295 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 15:44:42,310 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:43,472 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 15:44:43,472 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:44,704 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 15:44:44,704 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:45,801 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 15:44:45,802 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:46,899 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 15:44:46,901 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:47,936 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 15:44:47,936 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:49,104 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 15:44:49,104 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:50,192 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 15:44:51,221 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:52,390 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 15:44:52,390 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:53,496 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 15:44:53,499 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 15:44:54,598 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 15:44:54,603 - Received request 1742552076769: Create a comprehensive summary of the following content in Hindi language. 
+                        ...
+2025-03-21 15:44:54,603 - Is voice input: False
+2025-03-21 15:44:54,603 - Generating image for prompt: Create a comprehensive summary of the following content in Hindi language. 
+                        ...
+2025-03-21 15:44:55,697 - Polling for Model: Start polling for model_process
+2025-03-21 16:05:17,354 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:18,475 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:05:18,476 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:19,667 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:05:19,667 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:20,886 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:05:20,890 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:21,983 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:05:21,983 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:23,079 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:05:23,080 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:24,182 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:05:24,183 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:25,509 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 16:05:25,511 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:26,597 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:05:26,598 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:27,709 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:05:27,709 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:29,019 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:05:30,122 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:31,225 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:05:31,228 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:32,776 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:05:32,779 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:05:33,878 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:05:33,881 - Received request 1742553318124: Create a comprehensive summary of the following content in Hindi language. 
+                        ...
+2025-03-21 16:05:33,882 - Is voice input: False
+2025-03-21 16:05:33,882 - Generating image for prompt: Create a comprehensive summary of the following content in Hindi language. 
+                        ...
+2025-03-21 16:05:34,969 - Polling for Model: Start polling for model_process
+2025-03-21 16:07:59,339 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:00,399 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:08:00,401 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:01,721 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:08:01,723 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:03,021 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:08:03,034 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:04,561 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:08:04,564 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:05,676 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:08:05,678 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:07,846 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:08:07,847 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:09,101 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 16:08:09,101 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:10,296 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:08:10,298 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:11,378 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:08:11,378 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:12,714 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:08:13,814 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:14,961 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:08:14,963 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:16,021 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:08:16,023 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:08:17,107 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:08:17,121 - Received request 1742553480770: Create a comprehensive summary of the following content in Hindi language. 
+                      Ma...
+2025-03-21 16:08:17,122 - Is voice input: False
+2025-03-21 16:08:17,122 - Generating image for prompt: Create a comprehensive summary of the following content in Hindi language. 
+                      Ma...
+2025-03-21 16:08:18,219 - Polling for Model: Start polling for model_process
+2025-03-21 16:55:20,607 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:21,715 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:55:21,716 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:22,815 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:55:22,817 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:23,912 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:55:23,917 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:24,898 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:55:24,899 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:26,002 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:55:26,003 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:27,222 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:55:27,226 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:28,319 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 16:55:28,319 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:29,448 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:55:29,448 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:30,515 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:55:30,516 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:31,500 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:55:32,715 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:33,823 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:55:33,826 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:34,913 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:55:34,913 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:55:36,016 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:55:36,018 - Received request 1742556329540: Create a comprehensive summary of the following content in Hindi language. 
+                        ...
+2025-03-21 16:55:36,018 - Is voice input: False
+2025-03-21 16:55:36,019 - Generating image for prompt: Create a comprehensive summary of the following content in Hindi language. 
+                        ...
+2025-03-21 16:55:37,117 - Polling for Model: Start polling for model_process
+2025-03-21 16:58:31,323 - Received request 1742556511322: Please respond to this prompt in English language: hi...
+2025-03-21 16:58:31,323 - Is voice input: False
+2025-03-21 16:58:32,464 - Polling for Model: Start polling for model_process
+2025-03-21 16:58:54,925 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:58:55,977 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:58:55,978 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:58:56,950 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:58:56,950 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:58:58,025 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:58:58,085 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:58:59,057 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:58:59,059 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:00,130 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:59:00,130 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:01,178 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:59:01,181 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:02,201 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 16:59:02,202 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:03,210 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:59:03,211 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:04,267 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:59:04,267 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:05,328 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:59:06,312 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:07,289 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 16:59:07,290 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:08,359 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 16:59:08,360 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 16:59:09,360 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 16:59:09,373 - Received request 1742556537550: Please respond to this prompt in English language: generate a image of lion...
+2025-03-21 16:59:09,373 - Is voice input: False
+2025-03-21 16:59:09,374 - Generating image for prompt: Please respond to this prompt in English language: generate a image of lion...
+2025-03-21 16:59:10,464 - Polling for Model: Start polling for model_process
+2025-03-21 17:05:03,341 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:04,332 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:05:04,334 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:05,409 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:05:05,410 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:06,400 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:05:06,457 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:07,489 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:05:07,489 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:08,511 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:05:08,512 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:09,566 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:05:09,566 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:10,601 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 17:05:10,602 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:11,658 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:05:11,659 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:12,711 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:05:12,711 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:13,741 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:05:14,731 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:15,769 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:05:15,770 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:16,845 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:05:16,845 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:05:17,840 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:05:17,842 - Received request 1742556898155: Please respond to this prompt in English language: generate image of lion...
+2025-03-21 17:05:17,843 - Is voice input: False
+2025-03-21 17:05:17,843 - Generating image for prompt: Please respond to this prompt in English language: generate image of lion...
+2025-03-21 17:05:18,911 - Polling for Model: Start polling for model_process
+2025-03-21 17:06:34,547 - Received request 1742556978657: Please respond to this prompt in English language: generate image of lion...
+2025-03-21 17:06:34,547 - Is voice input: False
+2025-03-21 17:06:34,547 - Generating image for prompt: Please respond to this prompt in English language: generate image of lion...
+2025-03-21 17:06:35,577 - Polling for Model: Start polling for model_process
+2025-03-21 17:08:31,823 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:32,886 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:08:32,886 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:33,849 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:08:33,849 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:34,904 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:08:34,908 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:35,871 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:08:35,872 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:36,931 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:08:36,931 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:38,006 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:08:38,008 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:39,021 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 17:08:39,022 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:40,126 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:08:40,128 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:41,143 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:08:41,144 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:42,120 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:08:43,222 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:44,246 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:08:44,248 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:45,309 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:08:45,312 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:08:46,312 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:08:46,323 - Received request 1742557114258: Generate an image about: generate image of lion]. Return the image URL in the format: [IMAGE_URL:url...
+2025-03-21 17:08:46,323 - Is voice input: False
+2025-03-21 17:08:46,323 - Generating image for prompt: Generate an image about: generate image of lion]. Return the image URL in the format: [IMAGE_URL:url...
+2025-03-21 17:08:47,336 - Polling for Model: Start polling for model_process
+2025-03-21 17:11:23,405 - Received request 1742557283404: Generate an image about: generate image of lion. Return the image URL in the format: [IMAGE_URL:url_...
+2025-03-21 17:11:23,405 - Is voice input: False
+2025-03-21 17:11:23,405 - Generating image for prompt: Generate an image about: generate image of lion. Return the image URL in the format: [IMAGE_URL:url_...
+2025-03-21 17:11:24,432 - Polling for Model: Start polling for model_process
+2025-03-21 17:13:57,888 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:13:58,935 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:13:58,937 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:00,021 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:14:00,022 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:01,046 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:14:01,058 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:02,125 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:14:02,128 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:03,139 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:14:03,140 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:04,168 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:14:04,170 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:05,248 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 17:14:05,249 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:06,291 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:14:06,291 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:07,270 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:14:07,271 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:08,257 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:14:09,337 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:10,487 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:14:10,488 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:11,511 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:14:11,514 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:14:12,517 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:14:12,520 - Received request 1742557440197: Generate an image about: generate image of lion. Return the image URL in the format: [IMAGE_URL:url_...
+2025-03-21 17:14:12,520 - Is voice input: False
+2025-03-21 17:14:12,520 - Generating image for prompt: Generate an image about: generate image of lion. Return the image URL in the format: [IMAGE_URL:url_...
+2025-03-21 17:14:13,516 - Polling for Model: Start polling for model_process
+2025-03-21 17:16:14,110 - Received request 1742557574109: hi...
+2025-03-21 17:16:14,110 - Is voice input: False
+2025-03-21 17:16:15,134 - Polling for Model: Start polling for model_process
+2025-03-21 17:16:30,569 - Received request 1742557590568: Generate an image about: can u generate a image of lion. Return the image URL in the format: [IMAGE_...
+2025-03-21 17:16:30,569 - Is voice input: False
+2025-03-21 17:16:30,569 - Generating image for prompt: Generate an image about: can u generate a image of lion. Return the image URL in the format: [IMAGE_...
+2025-03-21 17:16:31,658 - Polling for Model: Start polling for model_process
+2025-03-21 17:18:28,646 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:29,705 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:18:29,706 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:30,789 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:18:30,789 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:31,774 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:18:31,778 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:32,757 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:18:32,760 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:33,782 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:18:33,784 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:34,828 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:18:34,832 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:35,929 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 17:18:35,929 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:36,907 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:18:36,908 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:37,896 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:18:37,898 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:38,887 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:18:39,886 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:40,865 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:18:40,866 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:41,854 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:18:41,856 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:18:42,838 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:18:42,845 - Received request 1742557711301: Generate an image about: generate a image of book. Return the image URL in the format: [IMAGE_URL:ur...
+2025-03-21 17:18:42,845 - Is voice input: False
+2025-03-21 17:18:42,845 - Generating image for prompt: Generate an image about: generate a image of book. Return the image URL in the format: [IMAGE_URL:ur...
+2025-03-21 17:18:43,842 - Polling for Model: Start polling for model_process
+2025-03-21 17:21:09,984 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:10,975 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:21:10,976 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:12,016 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:21:12,017 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:13,107 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:21:13,115 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:14,101 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:21:14,103 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:15,147 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:21:15,148 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:16,114 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:21:16,114 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:17,195 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 17:21:17,197 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:18,277 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:21:18,278 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:19,337 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:21:19,338 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:20,327 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:21:21,403 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:22,383 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:21:22,384 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:23,446 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:21:23,446 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:21:24,470 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:21:24,475 - Received request 1742557872579: hello...
+2025-03-21 17:21:24,475 - Is voice input: False
+2025-03-21 17:21:25,499 - Polling for Model: Start polling for model_process
+2025-03-21 17:21:35,546 - Received request 1742557895546: Generate an image about: can u generate a image of india. Return the image URL in the format: [IMAGE...
+2025-03-21 17:21:35,547 - Is voice input: False
+2025-03-21 17:21:35,547 - Generating image for prompt: Generate an image about: can u generate a image of india. Return the image URL in the format: [IMAGE...
+2025-03-21 17:21:36,615 - Polling for Model: Start polling for model_process
+2025-03-21 17:23:44,355 - Received request 1742558024353: Generate an image about: generate a image of bird. Return the image URL in the format: [IMAGE_URL:ur...
+2025-03-21 17:23:44,355 - Is voice input: False
+2025-03-21 17:23:44,355 - Generating image for prompt: Generate an image about: generate a image of bird. Return the image URL in the format: [IMAGE_URL:ur...
+2025-03-21 17:23:45,421 - Polling for Model: Start polling for model_process
+2025-03-21 17:27:00,042 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:01,042 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:27:01,042 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:02,147 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:27:02,148 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:03,224 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:27:03,240 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:04,325 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:27:04,326 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:05,294 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:27:05,294 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:06,285 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:27:06,285 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:07,293 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-21 17:27:07,294 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:08,278 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:27:08,278 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:09,292 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:27:09,293 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:10,374 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:27:11,378 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:12,364 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-21 17:27:12,365 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:13,347 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-21 17:27:13,348 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-21 17:27:14,392 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-21 17:27:14,399 - Received request 1742558222714: Generate an image about: generate image of book. Return the image URL in the format: [IMAGE_URL:url_...
+2025-03-21 17:27:14,400 - Is voice input: False
+2025-03-21 17:27:14,400 - Generating image for prompt: Generate an image about: generate image of book. Return the image URL in the format: [IMAGE_URL:url_...
+2025-03-21 17:27:15,528 - Polling for Model: Start polling for model_process
+2025-03-22 01:28:24,062 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:25,157 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 01:28:25,157 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:26,151 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 01:28:26,153 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:27,325 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 01:28:27,333 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:28,346 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 01:28:28,348 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:29,465 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 01:28:29,466 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:30,536 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 01:28:30,536 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:31,875 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-22 01:28:31,875 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:32,857 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 01:28:32,859 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:33,951 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 01:28:33,953 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:35,022 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 01:28:36,100 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:37,114 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 01:28:37,116 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:38,104 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 01:28:38,106 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:28:39,202 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 01:28:39,215 - Received request 1742587105806: Generate an image about: generate image of a bird. Return the image URL in the format: [IMAGE_URL:ur...
+2025-03-22 01:28:39,216 - Is voice input: False
+2025-03-22 01:28:39,216 - Generating image for prompt: Generate an image about: generate image of a bird. Return the image URL in the format: [IMAGE_URL:ur...
+2025-03-22 01:28:40,247 - Polling for Model: Start polling for model_process
+2025-03-22 01:34:31,527 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:32,618 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 01:34:32,620 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:33,695 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 01:34:33,698 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:34,704 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 01:34:34,718 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:35,823 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 01:34:35,824 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:36,912 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 01:34:36,915 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:37,975 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 01:34:37,979 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:39,054 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-22 01:34:39,057 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:40,147 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 01:34:40,147 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:41,177 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 01:34:41,178 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:42,277 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 01:34:43,333 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:44,523 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 01:34:44,523 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:45,580 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 01:34:45,582 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 01:34:46,766 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 01:34:46,839 - Received request 1742587472547: Generate an image about: generate image of a bird. Return the image URL in the format: [IMAGE_URL:ur...
+2025-03-22 01:34:46,839 - Is voice input: False
+2025-03-22 01:34:46,839 - Generating image for prompt: Generate an image about: generate image of a bird. Return the image URL in the format: [IMAGE_URL:ur...
+2025-03-22 01:34:47,997 - Polling for Model: Start polling for model_process
+2025-03-22 19:49:56,908 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:49:58,242 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 19:49:58,245 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:00,558 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 19:50:00,559 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:01,624 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 19:50:01,636 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:03,498 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 19:50:03,500 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:05,500 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 19:50:05,501 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:06,497 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 19:50:06,499 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:08,812 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-22 19:50:08,814 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:11,078 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 19:50:11,079 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:12,104 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 19:50:12,104 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:13,165 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 19:50:15,289 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:16,370 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-22 19:50:16,372 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:17,460 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-22 19:50:17,460 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 7fc748c9f7eb0f1a2ad2e356ab54c5176c0d2965ea1f6bd49599c10444f90785', 'Content-Type': 'application/json'}
+2025-03-22 19:50:18,433 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-22 19:50:18,441 - Received request 1742653199573: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-22 19:50:18,441 - Is voice input: False
+2025-03-22 19:50:18,441 - Generating image for prompt: Create a learning module about digital literacy for 12-15 age group students in Hindi....
+2025-03-22 19:50:19,548 - Polling for Model: Start polling for model_process
+2025-03-22 19:52:17,955 - Received request 1742653337954: Simplify this content for rural students with basic literacy: Financial services are essential for e...
+2025-03-22 19:52:17,955 - Is voice input: False
+2025-03-22 19:52:20,295 - Polling for Model: Start polling for model_process
+2025-03-23 09:50:54,157 - Received request 1742703654157: Create a 5-question quiz about: Create a 5-question quiz about internet safety with multiple choice ...
+2025-03-23 09:50:54,157 - Is voice input: False
+2025-03-23 09:50:54,157 - Generating image for prompt: Create a 5-question quiz about: Create a 5-question quiz about internet safety with multiple choice ...
+2025-03-23 09:51:28,701 - Received request 1742703688701: Simplify this content for rural students with basic literacy: Financial services are essential for e...
+2025-03-23 09:51:28,703 - Is voice input: False
+2025-03-23 09:51:54,829 - Received request 1742703714829: hi...
+2025-03-23 09:51:54,829 - Is voice input: False
+2025-03-23 09:52:31,174 - Received request 1742703751173: hi...
+2025-03-23 09:52:31,174 - Is voice input: False
+2025-03-23 09:52:41,900 - Received request 1742703761900: hi...
+2025-03-23 09:52:41,901 - Is voice input: False
+2025-03-23 09:53:14,442 - Received request 1742703794441: hello...
+2025-03-23 09:53:14,443 - Is voice input: False
+2025-03-23 09:53:38,938 - Received request 1742703818938: hello...
+2025-03-23 09:53:38,939 - Is voice input: False
+2025-03-23 09:54:43,695 - Received request 1742703883694: hi...
+2025-03-23 09:54:43,695 - Is voice input: False
+2025-03-23 09:55:20,636 - Received request 1742703920636: hi'...
+2025-03-23 09:55:20,637 - Is voice input: False
+2025-03-23 09:55:30,664 - Received request 1742703930664: hi...
+2025-03-23 09:55:30,665 - Is voice input: False
+2025-03-23 09:56:35,023 - Received request 1742703995023: hi...
+2025-03-23 09:56:35,024 - Is voice input: False
+2025-03-23 09:57:58,039 - Received request 1742704078038: hi...
+2025-03-23 09:57:58,040 - Is voice input: False
+2025-03-23 09:58:34,297 - Received request 1742704114296: hi...
+2025-03-23 09:58:34,297 - Is voice input: False
+2025-03-23 09:59:09,269 - Received request 1742704149269: hi...
+2025-03-23 09:59:09,270 - Is voice input: False
+2025-03-23 10:00:06,976 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:08,043 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 10:00:08,046 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:09,210 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 10:00:09,213 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:10,318 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 10:00:10,323 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:11,335 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 10:00:11,336 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:12,464 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 10:00:12,465 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:13,546 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 10:00:13,547 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:14,522 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-23 10:00:14,523 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:15,726 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 10:00:15,726 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:16,764 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 10:00:16,764 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:17,748 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 10:00:19,005 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:20,032 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 10:00:20,034 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:21,172 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 10:00:21,174 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 11af5a98fcae63f21e3be2b236dcc1d491c1d30e459808478488a8f6a35065bf', 'Content-Type': 'application/json'}
+2025-03-23 10:00:22,248 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 10:00:22,251 - Received request 1742704209389: hi...
+2025-03-23 10:00:22,251 - Is voice input: False
+2025-03-23 10:00:23,301 - Polling for Model: Start polling for model_process
+2025-03-23 10:00:38,531 - Received request 1742704238531: Create a 5-question quiz about internet safety with multiple choice answers....
+2025-03-23 10:00:38,531 - Is voice input: False
+2025-03-23 10:00:38,531 - Generating image for prompt: Create a 5-question quiz about internet safety with multiple choice answers....
+2025-03-23 10:00:39,616 - Polling for Model: Start polling for model_process
+2025-03-23 10:33:46,240 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:47,290 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 10:33:47,292 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:48,357 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 10:33:48,359 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:49,441 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 10:33:49,455 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:50,488 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 10:33:50,489 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:51,564 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 10:33:51,565 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:52,527 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 10:33:52,529 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:53,586 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-23 10:33:53,587 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:54,752 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 10:33:54,754 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:55,835 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 10:33:55,836 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:56,913 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 10:33:58,133 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:33:59,187 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 10:33:59,188 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:34:00,266 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 10:34:00,266 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 9380a3e0d7f77852332ccc70ddfa67c35ab9ef1d1f5cc9d55430787451a652a0', 'Content-Type': 'application/json'}
+2025-03-23 10:34:01,323 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 10:34:01,333 - Received request 1742706228681: hi...
+2025-03-23 10:34:01,334 - Is voice input: False
+2025-03-23 10:34:02,334 - Polling for Model: Start polling for model_process
+2025-03-23 12:35:44,582 - Received request 1742713544582: hi...
+2025-03-23 12:35:44,582 - Is voice input: False
+2025-03-23 12:37:03,412 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:04,495 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 12:37:04,497 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:05,624 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 12:37:05,626 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:06,664 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 12:37:06,751 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:07,821 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 12:37:07,821 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:08,823 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 12:37:08,823 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:09,993 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 12:37:09,996 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/669a63646eb56306647e1091 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:11,189 - Model Creation: Model 669a63646eb56306647e1091 instantiated.
+2025-03-23 12:37:11,192 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:12,181 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 12:37:12,183 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:13,207 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 12:37:13,207 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:14,315 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 12:37:15,411 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6759db476eb56303857a07c1 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:16,577 - Model Creation: Model 6759db476eb56303857a07c1 instantiated.
+2025-03-23 12:37:16,581 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/64aee5824d34b1221e70ac07 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:17,651 - Model Creation: Model 64aee5824d34b1221e70ac07 instantiated.
+2025-03-23 12:37:17,653 - Start service for GET Model  - https://platform-api.aixplain.com/sdk/models/6610617ff1278441b6482530 - {'Authorization': 'Token 2eb83ad6363d95600bc76329a38d5d63bc62d9130f2a9d66833746497793ca91', 'Content-Type': 'application/json'}
+2025-03-23 12:37:18,755 - Model Creation: Model 6610617ff1278441b6482530 instantiated.
+2025-03-23 12:37:18,769 - Received request 1742713619695: hi...
+2025-03-23 12:37:18,770 - Is voice input: False
+2025-03-23 12:37:19,968 - Polling for Model: Start polling for model_process

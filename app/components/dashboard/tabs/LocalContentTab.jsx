@@ -2,819 +2,515 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
-  FaCloudDownloadAlt, 
-  FaFolder, 
-  FaFolderOpen, 
-  FaFileAlt, 
-  FaPlay, 
-  FaPause,
-  FaSync, 
-  FaPlus, 
-  FaUpload, 
-  FaGlobe, 
-  FaWifi, 
-  FaWifiSlash,
-  FaLanguage,
-  FaUserGraduate
+  FaBookOpen, 
+  FaFileUpload,
+  FaDownload,
+  FaBookmark,
+  FaShare
 } from 'react-icons/fa';
 import { 
   BsTranslate, 
   BsSearch, 
-  BsThreeDotsVertical, 
-  BsArrowRight,
-  BsFilter,
-  BsLightbulb
+  BsBookmarkStar,
+  BsMic,
+  BsArrowRight
 } from 'react-icons/bs';
-import { MdOutlineSignalWifiOff, MdSignalWifiStatusbarConnectedNoInternet, MdOutlineStorage } from 'react-icons/md';
-import { RiAiGenerate } from 'react-icons/ri';
+import { MdOutlineSummarize, MdQuiz, MdOutlineSchool, MdOutlineMenuBook } from 'react-icons/md';
+import { toast } from 'react-hot-toast'; // Add this import for notifications
 
 const LocalContentTab = () => {
   // State management
   const [searchTerm, setSearchTerm] = useState('');
-  const [activeCategory, setActiveCategory] = useState('all');
-  const [selectedLanguage, setSelectedLanguage] = useState('all');
-  const [showUploadModal, setShowUploadModal] = useState(false);
-  const [showGenerateModal, setShowGenerateModal] = useState(false);
-  const [isOnline, setIsOnline] = useState(true);
-  const [storageUsed, setStorageUsed] = useState(65); // percentage
-  const [playingContent, setPlayingContent] = useState(null);
-  const [generatingContent, setGeneratingContent] = useState(false);
-  const [generationPrompt, setGenerationPrompt] = useState('');
-  const [generationLanguage, setGenerationLanguage] = useState('Hindi');
-  const [generationTopic, setGenerationTopic] = useState('Agriculture');
-  const [generationLevel, setGenerationLevel] = useState('Beginner');
-  
-  // Mock data for local content
-  const localContent = [
+  const [selectedLanguage, setSelectedLanguage] = useState('Hindi');
+  const [selectedClass, setSelectedClass] = useState('10');
+  const [selectedSubject, setSelectedSubject] = useState('all');
+  const [selectedChapter, setSelectedChapter] = useState(null);
+  const [uploadedFile, setUploadedFile] = useState(null);
+  const [filePreview, setFilePreview] = useState(null);
+  const [isGeneratingSummary, setIsGeneratingSummary] = useState(false);
+  const [generatedSummary, setGeneratedSummary] = useState(null);
+  const [summaryLevel, setSummaryLevel] = useState('simple');
+  const [isBookmarked, setIsBookmarked] = useState(false);
+  const [activeView, setActiveView] = useState('chapters'); // 'chapters', 'upload', 'saved'
+  const [summaryError, setSummaryError] = useState(null); // Add this line to fix the error
+  const [summaryContext, setSummaryContext] = useState(null);
+
+  // Sample data
+  const classes = ['6', '7', '8', '9', '10', '11', '12'];
+  const subjects = ['all', 'Mathematics', 'Science', 'Social Science', 'English', 'Hindi'];
+  const languages = ['Hindi', 'English', 'Bengali', 'Tamil', 'Telugu', 'Marathi', 'Gujarati'];
+
+  // Sample chapters data
+  const chaptersData = [
     {
       id: 1,
-      title: 'Sustainable Farming Practices',
-      category: 'Agriculture',
-      type: 'audio',
-      language: 'Hindi',
-      size: '12MB',
-      duration: '15 min',
-      lastAccessed: '2 days ago',
-      downloadDate: '2023-10-15',
-      thumbnail: 'https://via.placeholder.com/150',
-      aiGenerated: true,
-      popularity: 85,
-      level: 'Beginner'
+      title: 'Real Numbers',
+      subject: 'Mathematics',
+      class: '10',
+      chapter: '1',
+      complexity: 'medium',
+      keyTopics: ['Euclid\'s Division Lemma', 'Fundamental Theorem of Arithmetic', 'Irrational Numbers'],
+      image: 'https://img.freepik.com/free-vector/hand-drawn-mathematics-background_23-2148157511.jpg',
+      popularity: 85
     },
     {
       id: 2,
-      title: 'Digital Banking Basics',
-      category: 'Financial Literacy',
-      type: 'video',
-      language: 'Bengali',
-      size: '45MB',
-      duration: '22 min',
-      lastAccessed: '1 week ago',
-      downloadDate: '2023-09-28',
-      thumbnail: 'https://via.placeholder.com/150',
-      aiGenerated: false,
-      popularity: 92,
-      level: 'Beginner'
+      title: 'Chemical Reactions',
+      subject: 'Science',
+      class: '10',
+      chapter: '2',
+      complexity: 'high',
+      keyTopics: ['Types of Reactions', 'Balancing Equations', 'Oxidation and Reduction'],
+      image: 'https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg',
+      popularity: 78
     },
     {
       id: 3,
-      title: 'Preventive Healthcare for Families',
-      category: 'Health',
-      type: 'document',
-      language: 'Tamil',
-      size: '3MB',
-      duration: '10 pages',
-      lastAccessed: '3 days ago',
-      downloadDate: '2023-10-10',
-      thumbnail: 'https://via.placeholder.com/150',
-      aiGenerated: false,
-      popularity: 78,
-      level: 'Intermediate'
+      title: 'Nationalism in India',
+      subject: 'Social Science',
+      class: '10',
+      chapter: '3',
+      complexity: 'medium',
+      keyTopics: ['Non-Cooperation Movement', 'Civil Disobedience', 'Quit India Movement'],
+      image: 'https://img.freepik.com/free-vector/hand-drawn-indian-independence-day-background_23-2149492108.jpg',
+      popularity: 92
     },
     {
       id: 4,
-      title: 'Water Conservation Techniques',
-      category: 'Agriculture',
-      type: 'audio',
-      language: 'Hindi',
-      size: '18MB',
-      duration: '25 min',
-      lastAccessed: 'Today',
-      downloadDate: '2023-10-18',
-      thumbnail: 'https://via.placeholder.com/150',
-      aiGenerated: true,
-      popularity: 95,
-      level: 'Intermediate'
+      title: 'Light - Reflection',
+      subject: 'Science',
+      class: '10',
+      chapter: '4',
+      complexity: 'medium',
+      keyTopics: ['Laws of Reflection', 'Spherical Mirrors', 'Mirror Formula'],
+      image: 'https://img.freepik.com/free-vector/realistic-light-bulb-with-electricity_23-2149129410.jpg',
+      popularity: 75
     },
     {
       id: 5,
-      title: 'Small Business Management',
-      category: 'Business',
-      type: 'video',
-      language: 'Marathi',
-      size: '120MB',
-      duration: '45 min',
-      lastAccessed: '5 days ago',
-      downloadDate: '2023-09-20',
-      thumbnail: 'https://via.placeholder.com/150',
-      aiGenerated: false,
-      popularity: 88,
-      level: 'Advanced'
+      title: 'Polynomials',
+      subject: 'Mathematics',
+      class: '10',
+      chapter: '5',
+      complexity: 'low',
+      keyTopics: ['Zeros of Polynomials', 'Division Algorithm', 'Relationship between Zeros and Coefficients'],
+      image: 'https://img.freepik.com/free-vector/realistic-math-chalkboard-background_23-2148163817.jpg',
+      popularity: 80
     },
     {
       id: 6,
-      title: 'Child Nutrition Guidelines',
-      category: 'Health',
-      type: 'document',
-      language: 'Bengali',
-      size: '5MB',
-      duration: '15 pages',
-      lastAccessed: '1 day ago',
-      downloadDate: '2023-10-12',
-      thumbnail: 'https://via.placeholder.com/150',
-      aiGenerated: true,
-      popularity: 90,
-      level: 'Beginner'
+      title: 'Acids and Bases',
+      subject: 'Science',
+      class: '10',
+      chapter: '6',
+      complexity: 'high',
+      keyTopics: ['pH Scale', 'Neutralization Reactions', 'Salts and their Properties'],
+      image: 'https://img.freepik.com/free-vector/realistic-science-laboratory-equipment_23-2148485455.jpg',
+      popularity: 88
     }
   ];
-  
-  // Categories and languages for filtering
-  const categories = ['all', 'Agriculture', 'Health', 'Financial Literacy', 'Business', 'Education'];
-  const languages = ['all', 'Hindi', 'Bengali', 'Tamil', 'Marathi', 'Telugu', 'Kannada'];
-  
-  // Filter content based on search, category, and language
-  const filteredContent = localContent.filter(content => 
-    (activeCategory === 'all' || content.category === activeCategory) &&
-    (selectedLanguage === 'all' || content.language === selectedLanguage) &&
-    (content.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-     content.category.toLowerCase().includes(searchTerm.toLowerCase()))
-  );
-  
-  // Check online status
-  useEffect(() => {
-    const handleOnlineStatus = () => {
-      setIsOnline(navigator.onLine);
-    };
+
+  // Filter chapters based on search, class, and subject
+  const filteredChapters = chaptersData.filter(chapter => {
+    const matchesSearch = chapter.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         chapter.keyTopics.some(topic => topic.toLowerCase().includes(searchTerm.toLowerCase()));
+    const matchesClass = chapter.class === selectedClass;
+    const matchesSubject = selectedSubject === 'all' || chapter.subject === selectedSubject;
     
-    window.addEventListener('online', handleOnlineStatus);
-    window.addEventListener('offline', handleOnlineStatus);
-    
-    return () => {
-      window.removeEventListener('online', handleOnlineStatus);
-      window.removeEventListener('offline', handleOnlineStatus);
-    };
-  }, []);
+    return matchesSearch && matchesClass && matchesSubject;
+  });
+
+  const handleSelectChapter = (chapter) => {
+    setSelectedChapter(chapter);
+    setGeneratedSummary(null);
+    setSummaryError(null);
+  };
   
-  // Toggle play/pause for content
-  const togglePlayContent = (id) => {
-    if (playingContent === id) {
-      setPlayingContent(null);
-    } else {
-      setPlayingContent(id);
+  const handleFileUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setUploadedFile(file);
+      setGeneratedSummary(null); // Reset summary
+      setSummaryError(null);    // Reset error
+  
+      const reader = new FileReader();
+      reader.onload = () => {
+        setFilePreview(reader.result);
+      };
+      reader.readAsDataURL(file);
     }
   };
   
-  // Handle AI content generation
-  const handleGenerateContent = () => {
-    if (!generationPrompt) return;
-    
-    setGeneratingContent(true);
-    
-    // Simulate AI generation process
-    setTimeout(() => {
-      setGeneratingContent(false);
-      setShowGenerateModal(false);
-      setGenerationPrompt('');
-      // Here you would integrate with aiXPlain API
-      alert('Content generated successfully! It will appear in your local library.');
-    }, 3000);
-  };
+
+  const handleGenerateSummary = async () => {
+    setIsGeneratingSummary(true);
+    setSummaryError(null);
   
+    try {
+      let textToSummarize = "";
+  
+      if (uploadedFile) {
+        if (uploadedFile.type.startsWith("image/") || uploadedFile.type === "application/pdf") {
+          const formData = new FormData();
+          formData.append("file", uploadedFile);
+          formData.append("upload_preset", process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET);
+  
+          const uploadResponse = await fetch(
+            `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/auto/upload`,
+            { method: "POST", body: formData }
+          );
+          const uploadData = await uploadResponse.json();
+          if (!uploadData.secure_url) throw new Error("Failed to upload to Cloudinary");
+          const fileUrl = uploadData.secure_url;
+  
+          const ocrResponse = await fetch("/api/ocr", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ imageUrl: fileUrl })
+          });
+          const ocrData = await ocrResponse.json();
+          if (!ocrData.success) throw new Error("OCR failed: " + ocrData.error);
+          textToSummarize = ocrData.text;
+        } else if (uploadedFile.type === "text/plain") {
+          const reader = new FileReader();
+          textToSummarize = await new Promise((resolve, reject) => {
+            reader.onload = (event) => resolve(event.target.result);
+            reader.onerror = (error) => reject(error);
+            reader.readAsText(uploadedFile);
+          });
+        } else {
+          throw new Error("Unsupported file type. Please upload a text file, image, or PDF.");
+        }
+      } else if (selectedChapter) {
+        if (!selectedChapter.text) throw new Error("Chapter text not available");
+        textToSummarize = selectedChapter.text;
+      } else {
+        throw new Error("No content selected or uploaded");
+      }
+  
+      const response = await fetch("/api/Summarizers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          prompt: textToSummarize,
+          language: selectedLanguage,
+          summaryLevel: summaryLevel
+        })
+      });
+  
+      if (!response.ok) throw new Error(`API error: ${response.status}`);
+      const data = await response.json();
+  
+      if (!data.success) throw new Error(data.error || "Failed to generate summary");
+      setGeneratedSummary(data.summary);
+      toast.success("Summary generated successfully!");
+  
+      // Set summary context to open the modal
+      if (uploadedFile) {
+        setSummaryContext({ type: 'upload', file: uploadedFile });
+      } else if (selectedChapter) {
+        setSummaryContext({ type: 'chapter', chapter: selectedChapter });
+      }
+  
+    } catch (error) {
+      console.error("Error generating summary:", error);
+      setSummaryError(error.message);
+      toast.error("Failed to generate summary: " + error.message);
+    } finally {
+      setIsGeneratingSummary(false);
+    }
+  };
+
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-        <MdOutlineStorage className="mr-2 text-green-500 text-3xl" />
-        Local Educational Content
-      </h1>
-      
-      {/* Offline Mode Banner */}
-      {!isOnline && (
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 flex items-center"
-        >
-          <div className="bg-amber-100 p-2 rounded-full mr-3">
-            <MdOutlineSignalWifiOff className="text-amber-600 text-xl" />
-          </div>
-          <div>
-            <h3 className="font-medium text-amber-800">You're currently offline</h3>
-            <p className="text-sm text-amber-700">
-              You can still access all your downloaded content. New content and AI generation will be available when you reconnect.
-            </p>
-          </div>
-        </motion.div>
-      )}
-      
-      {/* Storage and Quick Actions */}
+    <div className="container mx-auto px-4 py-8">
+      {/* Header */}
       <motion.div 
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"
+        className="text-center mb-10"
       >
-        {/* Storage Status */}
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-lg font-semibold text-gray-800">Local Storage</h2>
-            <span className={`text-xs px-2 py-1 rounded-full ${
-              storageUsed < 70 ? 'bg-green-100 text-green-800' : 'bg-amber-100 text-amber-800'
-            }`}>
-              {storageUsed}% Used
-            </span>
-          </div>
-          
-          <div className="mb-3">
-            <div className="w-full bg-gray-200 rounded-full h-2.5">
-              <div 
-                className={`h-2.5 rounded-full ${
-                  storageUsed < 70 ? 'bg-green-500' : storageUsed < 90 ? 'bg-amber-500' : 'bg-red-500'
-                }`} 
-                style={{ width: `${storageUsed}%` }}
-              ></div>
-            </div>
-            <div className="flex justify-between mt-1 text-xs text-gray-500">
-              <span>0 GB</span>
-              <span>2.6 GB / 4 GB</span>
-            </div>
-          </div>
-          
-          <div className="space-y-2">
-            <div className="flex justify-between items-center">
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                <span className="text-sm text-gray-600">Audio</span>
-              </div>
-              <span className="text-sm font-medium text-gray-700">820 MB</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
-                <span className="text-sm text-gray-600">Video</span>
-              </div>
-              <span className="text-sm font-medium text-gray-700">1.5 GB</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-purple-500 mr-2"></div>
-                <span className="text-sm text-gray-600">Documents</span>
-              </div>
-              <span className="text-sm font-medium text-gray-700">280 MB</span>
-            </div>
-          </div>
-          
-          <button className="mt-4 w-full py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors flex items-center justify-center">
-            <FaSync className="mr-2" /> Manage Storage
+        <div className="inline-block bg-green-50 p-3 rounded-full mb-4">
+          <MdOutlineSummarize className="text-4xl text-green-600" />
+        </div>
+        <h1 className="text-3xl font-bold text-gray-800 mb-2">
+          NCERT Simplifier
+        </h1>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Understand complex NCERT concepts in simple language, in your preferred regional language
+        </p>
+      </motion.div>
+      
+      {/* Main Navigation */}
+      <div className="bg-white text-black rounded-xl shadow-sm mb-8 overflow-hidden">
+        <div className="flex border-b border-gray-200">
+          <button
+            onClick={() => setActiveView('chapters')}
+            className={`flex-1 py-4 px-4 font-medium text-center transition-colors ${
+              activeView === 'chapters' 
+                ? 'bg-green-50 text-green-600 border-b-2 border-green-500' 
+                : 'text-gray-600 hover:bg-gray-50'
+            }`}
+          >
+            <MdOutlineMenuBook className="inline mr-2 text-lg" />
+            NCERT Chapters
+          </button>
+          <button
+            onClick={() => setActiveView('upload')}
+            className={`flex-1 py-4 px-4 text-black font-medium text-center transition-colors ${
+              activeView === 'upload' 
+                ? 'bg-green-50 text-green-600 border-b-2 border-green-500' 
+                : 'text-gray-600 hover:bg-gray-50'
+            }`}
+          >
+            <FaFileUpload className="inline mr-2" />
+            Upload Content
+          </button>
+          <button
+            onClick={() => setActiveView('saved')}
+            className={`flex-1 py-4 px-4 font-medium text-center transition-colors ${
+              activeView === 'saved' 
+                ? 'bg-green-50 text-green-600 border-b-2 border-green-500' 
+                : 'text-gray-600 hover:bg-gray-50'
+            }`}
+          >
+            <FaBookmark className="inline mr-2" />
+            Saved Summaries
           </button>
         </div>
-        
-        {/* Quick Actions */}
-        <div className="bg-white rounded-xl shadow-sm p-6 col-span-1 md:col-span-2">
-          <h2 className="text-lg font-semibold text-gray-800 mb-4">Quick Actions</h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <button 
-              onClick={() => setShowGenerateModal(true)}
-              className="bg-green-50 hover:bg-green-100 transition-colors rounded-lg p-4 flex flex-col items-center justify-center"
-              disabled={!isOnline}
-            >
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-2">
-                <RiAiGenerate className="text-green-600 text-xl" />
-              </div>
-              <span className="text-sm font-medium text-gray-800">Generate with AI</span>
-              <span className="text-xs text-gray-500 mt-1">Create new content</span>
-            </button>
-            
-            <button 
-              onClick={() => setShowUploadModal(true)}
-              className="bg-green-50 hover:bg-green-100 transition-colors rounded-lg p-4 flex flex-col items-center justify-center"
-            >
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-2">
-                <FaUpload className="text-green-600 text-xl" />
-              </div>
-              <span className="text-sm font-medium text-gray-800">Upload Content</span>
-              <span className="text-xs text-gray-500 mt-1">Add your materials</span>
-            </button>
-            
-            <button 
-              className="bg-green-50 hover:bg-green-100 transition-colors rounded-lg p-4 flex flex-col items-center justify-center"
-              disabled={!isOnline}
-            >
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-2">
-                <FaCloudDownloadAlt className="text-green-600 text-xl" />
-              </div>
-              <span className="text-sm font-medium text-gray-800">Download New</span>
-              <span className="text-xs text-gray-500 mt-1">Browse catalog</span>
-            </button>
-            
-            <button className="bg-green-50 hover:bg-green-100 transition-colors rounded-lg p-4 flex flex-col items-center justify-center">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-2">
-                <FaLanguage className="text-green-600 text-xl" />
-              </div>
-              <span className="text-sm font-medium text-gray-800">Translate</span>
-              <span className="text-xs text-gray-500 mt-1">Change language</span>
-            </button>
-          </div>
-        </div>
-      </motion.div>
+      </div>
       
-      {/* Search and Filter */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="mb-6 flex flex-col md:flex-row gap-4 justify-between"
-      >
-        <div className="flex flex-col md:flex-row gap-4 flex-1">
-          <div className="relative flex-1">
-            <BsSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Search local content..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-            />
-          </div>
-          
-          <div className="flex gap-2 overflow-x-auto pb-2">
-            {categories.map(category => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${
-                  activeCategory === category 
-                    ? 'bg-green-500 text-white' 
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {category === 'all' ? 'All Categories' : category}
-              </button>
-            ))}
-          </div>
-        </div>
-        
-        <div className="flex items-center gap-2">
-          <select
-            value={selectedLanguage}
-            onChange={(e) => setSelectedLanguage(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-          >
-            {languages.map(language => (
-              <option key={language} value={language}>
-                {language === 'all' ? 'All Languages' : language}
-              </option>
-            ))}
-          </select>
-        </div>
-      </motion.div>
-      
-      {/* Content Grid */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredContent.map(content => (
-            <div 
-              key={content.id} 
-              className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 hover:border-green-300 transition-colors"
-            >
-              <div className="h-40 bg-gray-100 relative">
-                <img 
-                  src={content.thumbnail} 
-                  alt={content.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                  {content.type === 'audio' || content.type === 'video' ? (
-                    <button 
-                      onClick={() => togglePlayContent(content.id)}
-                      className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors"
-                    >
-                      {playingContent === content.id ? (
-                        <FaPause className="text-green-600 text-lg" />
-                      ) : (
-                        <FaPlay className="text-green-600 text-lg ml-1" />
-                      )}
-                    </button>
-                  ) : (
-                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
-                      <FaFileAlt className="text-green-600 text-lg" />
-                    </div>
-                  )}
-                </div>
-                <div className="absolute top-2 right-2">
-                  <button className="bg-white p-2 rounded-full shadow-sm hover:bg-gray-100 transition-colors">
-                    <BsThreeDotsVertical className="text-gray-700" />
-                  </button>
-                </div>
-                {content.aiGenerated && (
-                  <div className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full flex items-center">
-                    <RiAiGenerate className="mr-1" />
-                    AI Generated
-                  </div>
-                )}
-              </div>
-              <div className="p-4">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-medium text-gray-800">{content.title}</h3>
-                  <span className={`text-xs px-2 py-1 rounded-full ${
-                    content.level === 'Beginner' 
-                      ? 'bg-green-100 text-green-800' 
-                      : content.level === 'Intermediate'
-                        ? 'bg-blue-100 text-blue-800'
-                        : 'bg-purple-100 text-purple-800'
-                  }`}>
-                    {content.level}
-                  </span>
-                </div>
-                <div className="flex items-center text-sm text-gray-500 mb-3">
-                  {content.type === 'audio' && <FaPlay className="mr-1" />}
-                  {content.type === 'video' && <FaPlay className="mr-1" />}
-                  {content.type === 'document' && <FaFileAlt className="mr-1" />}
-                  <span>{content.duration}</span>
-                  <span className="mx-2">•</span>
-                  <BsTranslate className="mr-1" />
-                  <span>{content.language}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center text-xs text-gray-500">
-                    <MdOutlineStorage className="mr-1" />
-                    <span>{content.size}</span>
-                  </div>
-                  <div className="flex space-x-2">
-                    <button className="flex items-center text-sm font-medium text-green-600 hover:text-green-800 transition-colors">
-                      <FaPlay className="mr-1" />
-                      <span>Play</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        {filteredContent.length === 0 && (
-          <div className="bg-white rounded-xl shadow-sm p-8 text-center">
-            <div className="text-gray-400 mb-3">
-              <BsFilter className="text-5xl mx-auto" />
-            </div>
-            <h3 className="text-lg font-medium text-gray-800 mb-1">No content found</h3>
-            <p className="text-gray-600">Try changing your filters or search term</p>
-          </div>
-        )}
-      </motion.div>
-      
-      {/* AI-Powered Learning Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="mt-10 bg-white rounded-xl shadow-sm p-6"
-      >
-        <h2 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-          <RiAiGenerate className="mr-2 text-green-500" /> AI-Powered Rural Education
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <p className="text-gray-600 mb-4">
-              Create customized educational content for rural communities using aiXPlain's advanced AI models. Generate content in regional languages that works offline and in low-bandwidth areas.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                  <span className="text-green-600 text-xs font-bold">1</span>
-                </div>
-                <p className="text-sm text-gray-700">Choose a topic and target language</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                  <span className="text-green-600 text-xs font-bold">2</span>
-                </div>
-                <p className="text-sm text-gray-700">Describe the content you need</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                  <span className="text-green-600 text-xs font-bold">3</span>
-                </div>
-                <p className="text-sm text-gray-700">AI generates educational material</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                  <span className="text-green-600 text-xs font-bold">4</span>
-                </div>
-                <p className="text-sm text-gray-700">Download for offline use in rural areas</p>
-              </div>
-            </div>
-            <button 
-              onClick={() => setShowGenerateModal(true)}
-              disabled={!isOnline}
-              className={`mt-6 px-4 py-2 rounded-lg flex items-center ${
-                isOnline 
-                  ? 'bg-green-500 text-white hover:bg-green-600' 
-                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-              } transition-colors`}
-            >
-              <RiAiGenerate className="mr-2" />
-              Generate New Content
-            </button>
-          </div>
-          
-          <div className="bg-green-50 rounded-lg p-6">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <BsLightbulb className="text-green-600 text-3xl" />
-              </div>
-              <h3 className="font-medium text-gray-800">Content Ideas</h3>
-              <p className="text-sm text-gray-600 mt-1">Popular topics for rural education</p>
-            </div>
-            
-            <div className="space-y-3">
-              <div className="bg-white rounded-lg p-3 shadow-sm flex items-center">
-                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">
-                  <FaUserGraduate className="text-green-600" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-medium text-gray-800">Sustainable Farming Techniques</h4>
-                  <p className="text-xs text-gray-500">Most popular in Hindi regions</p>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-lg p-3 shadow-sm flex items-center">
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                  <FaUserGraduate className="text-blue-600" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-medium text-gray-800">Digital Financial Services</h4>
-                  <p className="text-xs text-gray-500">Trending in multiple languages</p>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-lg p-3 shadow-sm flex items-center">
-                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
-                  <FaUserGraduate className="text-purple-600" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-medium text-gray-800">Maternal & Child Healthcare</h4>
-                  <p className="text-xs text-gray-500">High demand in rural areas</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-      
-      {/* Offline Access Guide */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
-        className="mt-8 bg-white rounded-xl shadow-sm overflow-hidden"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-3">
-          <div className="p-6 md:col-span-2">
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">Offline Access Guide</h2>
-            <p className="text-gray-600 mb-4">
-              Learn how to make educational content available in areas with limited or no internet connectivity.
-            </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <div className="flex items-center mb-2">
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-2">
-                    <FaCloudDownloadAlt className="text-green-600" />
-                  </div>
-                  <h3 className="font-medium text-gray-800">Download in Advance</h3>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Download content when you have stable internet access before traveling to areas with poor connectivity.
-                </p>
-              </div>
-              
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <div className="flex items-center mb-2">
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-2">
-                    <MdSignalWifiStatusbarConnectedNoInternet className="text-green-600" />
-                  </div>
-                  <h3 className="font-medium text-gray-800">Low Bandwidth Mode</h3>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Enable low bandwidth mode to access text content even with poor internet connection.
-                </p>
-              </div>
-            </div>
-            
-            <button className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors flex items-center">
-              <FaGlobe className="mr-2" />
-              View Full Guide
-            </button>
-          </div>
-          
-          <div className="bg-green-500 p-6 text-white flex flex-col justify-center">
-            <h3 className="text-xl font-bold mb-3">Reach 500+ Rural Communities</h3>
-            <p className="mb-4">
-              Your educational content can help bridge the digital divide and empower rural communities across India.
-            </p>
-            <div className="flex items-center text-green-100 mb-2">
-              <FaWifi className="mr-2" />
-              <span>Works in low connectivity areas</span>
-            </div>
-            <div className="flex items-center text-green-100 mb-2">
-              <BsTranslate className="mr-2" />
-              <span>Available in 8 regional languages</span>
-            </div>
-            <div className="flex items-center text-green-100">
-              <FaUserGraduate className="mr-2" />
-              <span>Reaches 2.5M+ rural learners</span>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-      
-      {/* AI Content Generation Modal */}
-      {showGenerateModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl shadow-lg w-full max-w-2xl max-h-[90vh] overflow-hidden">
-            <div className="p-6">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-xl font-semibold text-gray-800">Generate Educational Content with AI</h3>
-                <button 
-                  onClick={() => setShowGenerateModal(false)}
-                  className="text-gray-400 hover:text-gray-600"
+      {/* NCERT Chapters View */}
+      {activeView === 'chapters' && (
+        <div className="space-y-8 text-black">
+          {/* Filters */}
+          <div className="bg-white rounded-xl text-black shadow-sm p-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+              <div>
+                <label className="block text-sm text-black font-medium text-gray-700 mb-1">Class</label>
+                <select
+                  value={selectedClass}
+                  onChange={(e) => setSelectedClass(e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
-                </button>
+                  {classes.map(cls => (
+                    <option key={cls} value={cls}>Class {cls}</option>
+                  ))}
+                </select>
               </div>
               
-              <div className="mb-6">
-                <p className="text-gray-600 mb-4">
-                  Create customized educational content for rural communities using aiXPlain's advanced AI models. The content will be optimized for offline use.
-                </p>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                <select
+                  value={selectedSubject}
+                  onChange={(e) => setSelectedSubject(e.target.value)}
+                  className="w-full text-black px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                >
+                  {subjects.map(subject => (
+                    <option key={subject} value={subject}>
+                      {subject === 'all' ? 'All Subjects' : subject}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              
+              <div>
+                <label className="block text-black text-sm text-black font-medium text-gray-700 mb-1">Language</label>
+                <select
+                  value={selectedLanguage}
+                  onChange={(e) => setSelectedLanguage(e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                >
+                  {languages.map(language => (
+                    <option key={language} value={language}>{language}</option>
+                  ))}
+                </select>
+              </div>
+              
+              <div>
+                <label className="block text-sm text-black font-medium text-gray-700 mb-1">Search</label>
+                <div className="relative">
+                  <BsSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                  <input
+                    type="text"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    placeholder="Search chapters, topics..."
+                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Chapter Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredChapters.map(chapter => (
+              <div 
+                key={chapter.id}
+                onClick={() => setSelectedChapter(chapter)}
+                className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 hover:border-green-300 hover:shadow-md transition-all cursor-pointer"
+              >
+                <div className="h-40 bg-gray-100 relative">
+                  <img 
+                    src={chapter.image} 
+                    alt={chapter.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-0 left-0 bg-green-500 text-white px-3 py-1 rounded-br-lg">
+                    <span className="font-medium">Chapter {chapter.chapter}</span>
+                  </div>
+                </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Target Language</label>
-                    <select
-                      value={generationLanguage}
-                      onChange={(e) => setGenerationLanguage(e.target.value)}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    >
-                      {languages.filter(lang => lang !== 'all').map(language => (
-                        <option key={language} value={language}>{language}</option>
-                      ))}
-                    </select>
+                <div className="p-4">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-medium text-gray-800">{chapter.title}</h3>
+                    <span className={`text-xs px-2 py-1 rounded-full ${
+                      chapter.complexity === 'low' 
+                        ? 'bg-green-100 text-green-800' 
+                        : chapter.complexity === 'medium'
+                          ? 'bg-blue-100 text-blue-800'
+                          : 'bg-purple-100 text-purple-800'
+                    }`}>
+                      {chapter.complexity.charAt(0).toUpperCase() + chapter.complexity.slice(1)}
+                    </span>
                   </div>
                   
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Topic Category</label>
-                    <select
-                      value={generationTopic}
-                      onChange={(e) => setGenerationTopic(e.target.value)}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    >
-                      {categories.filter(cat => cat !== 'all').map(category => (
-                        <option key={category} value={category}>{category}</option>
-                      ))}
-                    </select>
+                  <div className="flex text-black items-center text-sm text-gray-500 mb-3">
+                    <MdOutlineSchool className="mr-1" />
+                    <span>Class {chapter.class}</span>
+                    <span className="mx-2">•</span>
+                    <FaBookOpen className="mr-1" />
+                    <span>{chapter.subject}</span>
                   </div>
-                </div>
-                
-                <div className="mb-4">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Difficulty Level</label>
-                  <div className="flex space-x-4">
-                    {['Beginner', 'Intermediate', 'Advanced'].map(level => (
-                      <label key={level} className="flex items-center">
-                        <input
-                          type="radio"
-                          name="level"
-                          value={level}
-                          checked={generationLevel === level}
-                          onChange={() => setGenerationLevel(level)}
-                          className="mr-2 h-4 w-4 text-green-600 focus:ring-green-500"
-                        />
-                        <span className="text-sm text-gray-700">{level}</span>
-                      </label>
+                  
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    {chapter.keyTopics.slice(0, 2).map((topic, index) => (
+                      <span key={index} className="text-xs bg-gray-100 px-2 py-1 rounded-full text-gray-600">
+                        {topic}
+                      </span>
                     ))}
+                    {chapter.keyTopics.length > 2 && (
+                      <span className="text-xs bg-gray-100 px-2 py-1 rounded-full text-gray-600">
+                        +{chapter.keyTopics.length - 2} more
+                      </span>
+                    )}
                   </div>
-                </div>
-                
-                <div className="mb-4">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Describe the content you need
-                  </label>
-                  <textarea
-                    value={generationPrompt}
-                    onChange={(e) => setGenerationPrompt(e.target.value)}
-                    placeholder="E.g., Create a beginner-friendly guide on water conservation techniques for farming that includes practical steps and local context..."
-                    rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  ></textarea>
-                </div>
-                
-                <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                  <div className="flex items-start">
-                    <div className="bg-blue-100 p-1 rounded-full mr-3 mt-0.5">
-                      <BsLightbulb className="text-blue-600 text-sm" />
+                  
+                  <div className="flex justify-between items-center">
+                    <div className="flex items-center">
+                      <div className="w-20 h-1 bg-gray-200 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-green-500" 
+                          style={{ width: `${chapter.popularity}%` }}
+                        ></div>
+                      </div>
+                      <span className="text-xs text-gray-500 ml-2">{chapter.popularity}% popular</span>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-medium text-blue-800">Tips for effective content</h4>
-                      <ul className="text-xs text-blue-700 mt-1 list-disc list-inside space-y-1">
-                        <li>Be specific about the target audience (e.g., farmers, women entrepreneurs)</li>
-                        <li>Mention if you need visuals, audio narration, or text-only content</li>
-                        <li>Include cultural context relevant to your target region</li>
-                        <li>Specify if content should be optimized for feature phones or smartphones</li>
-                      </ul>
-                    </div>
+                    <button className="text-green-600 hover:text-green-800 transition-colors">
+                      <BsArrowRight />
+                    </button>
                   </div>
                 </div>
               </div>
-              
-              <div className="flex justify-end space-x-3">
-                <button
-                  onClick={() => setShowGenerateModal(false)}
-                  className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50"
-                >
-                  Cancel
-                </button>
-                <button
-                  onClick={handleGenerateContent}
-                  disabled={!generationPrompt || generatingContent}
-                  className={`px-4 py-2 rounded-lg flex items-center ${
-                    !generationPrompt || generatingContent
-                      ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                      : 'bg-green-500 text-white hover:bg-green-600'
-                  }`}
-                >
-                  {generatingContent ? (
-                    <>
-                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                      </svg>
-                      Generating...
-                    </>
-                  ) : (
-                    <>
-                      <RiAiGenerate className="mr-2" />
-                      Generate Content
-                    </>
-                  )}
-                </button>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       )}
       
-      {/* Upload Content Modal */}
-      {showUploadModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl shadow-lg w-full max-w-2xl max-h-[90vh] overflow-hidden">
-            <div className="p-6">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-xl font-semibold text-gray-800">Upload Educational Content</h3>
-                <button 
-                  onClick={() => setShowUploadModal(false)}
-                  className="text-gray-400 hover:text-gray-600"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
+      {/* Upload Content View */}
+      {activeView === 'upload' && (
+        <div className="bg-white text-black text-black rounded-xl shadow-sm p-6">
+          <h2 className="text-xl font-semibold text-gray-800 mb-6">Upload Your Content</h2>
+          
+          <div className="mb-6">
+            {!uploadedFile ? (
+              <div 
+                className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-green-300 transition-colors"
+                onClick={() => document.getElementById('fileInput').click()}
+              >
+                <input
+                  id="fileInput"
+                  type="file"
+                  accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                  className="hidden"
+                  onChange={handleFileUpload}
+                />
+                <div className="mb-3">
+                  <FaFileUpload className="text-gray-400 text-5xl mx-auto" />
+                </div>
+                <h3 className="text-lg font-medium text-gray-800 mb-1">Upload your study material</h3>
+                <p className="text-sm text-gray-600 mb-4">Drag and drop files here or click to browse</p>
+                <button className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors inline-block">
+                  Browse Files
                 </button>
+                <p className="text-xs text-gray-500 mt-4">
+                  Supported formats: PDF, JPG, PNG, DOC, DOCX (Max size: 20MB)
+                </p>
               </div>
-              
-              <div className="mb-6">
-                <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center mb-4">
-                  <div className="mb-3">
-                    <FaUpload className="text-gray-400 text-3xl mx-auto" />
+            ) : (
+              <div className="border border-gray-200 text-black rounded-lg overflow-hidden">
+                <div className="bg-gray-50 p-4 border-b border-gray-200 flex justify-between items-center">
+                  <div className="flex items-center">
+                    <div className="bg-green-100 p-2 rounded-lg mr-3">
+                      <FaFileUpload className="text-green-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-medium text-gray-800">{uploadedFile.name}</h3>
+                      <p className="text-xs text-gray-500">{(uploadedFile.size / (1024 * 1024)).toFixed(2)} MB</p>
+                    </div>
                   </div>
-                  <h4 className="text-lg font-medium text-gray-800 mb-1">Drag and drop files here</h4>
-                  <p className="text-sm text-gray-600 mb-4">or click to browse your files</p>
-                  <button className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors inline-block">
-                    Browse Files
+                  <button
+                    onClick={() => {
+                      setUploadedFile(null);
+                      setFilePreview(null);
+                    }}
+                    className="text-gray-400 hover:text-gray-600"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
                   </button>
-                  <p className="text-xs text-gray-500 mt-4">
-                    Supported formats: MP3, MP4, PDF, DOCX, PPTX (Max size: 100MB)
-                  </p>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
+                {filePreview && uploadedFile.type.startsWith('image/') && (
+                  <div className="p-4 border-b border-gray-200">
+                    <div className="h-48 bg-gray-100 rounded-lg overflow-hidden">
+                      <img 
+                        src={filePreview} 
+                        alt="Preview" 
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                )}
+                
+                <div className="p-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                      <select
+                        className="w-full text-black px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      >
+                        {subjects.filter(subject => subject !== 'all').map(subject => (
+                          <option key={subject} value={subject}>{subject}</option>
+                        ))}
+                      </select>
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Class</label>
+                      <select
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      >
+                        {classes.map(cls => (
+                          <option key={cls} value={cls}>Class {cls}</option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div className="mb-4">
                     <label className="block text-sm font-medium text-gray-700 mb-1">Content Title</label>
                     <input
                       type="text"
@@ -823,68 +519,507 @@ const LocalContentTab = () => {
                     />
                   </div>
                   
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                  <div className="mb-4">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Summary Language</label>
                     <select
+                      value={selectedLanguage}
+                      onChange={(e) => setSelectedLanguage(e.target.value)}
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                     >
-                      {categories.filter(cat => cat !== 'all').map(category => (
-                        <option key={category} value={category}>{category}</option>
+                      {languages.map(language => (
+                        <option key={language} value={language}>{language}</option>
                       ))}
                     </select>
                   </div>
+                  
+                  <div className="mb-4">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Summary Level</label>
+                    <div className="flex space-x-4">
+                      {['simple', 'detailed', 'advanced'].map(level => (
+                        <label key={level} className="flex items-center">
+                          <input
+                            type="radio"
+                            name="summaryLevel"
+                            value={level}
+                            checked={summaryLevel === level}
+                            onChange={() => setSummaryLevel(level)}
+                            className="mr-2 h-4 w-4 text-green-600 focus:ring-green-500"
+                          />
+                          <span className="text-sm text-gray-700">
+                            {level.charAt(0).toUpperCase() + level.slice(1)}
+                          </span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end space-x-3">
+                    <button
+                      onClick={() => {
+                        setUploadedFile(null);
+                        setFilePreview(null);
+                      }}
+                      className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      onClick={handleGenerateSummary}
+                      disabled={isGeneratingSummary}
+                      className={`px-4 py-2 rounded-lg flex items-center ${
+                        isGeneratingSummary
+                          ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                          : 'bg-green-500 text-white hover:bg-green-600'
+                      }`}
+                    >
+                      {isGeneratingSummary ? (
+                        <>
+                          <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                          Generating Summary...
+                        </>
+                      ) : (
+                        <>
+                          <MdOutlineSummarize className="mr-2" />
+                          Generate Summary
+                        </>
+                      )}
+                    </button>
+                  </div>
                 </div>
-                
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+{summaryContext && (
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+    <div className="bg-white rounded-xl shadow-lg w-full max-w-4xl max-h-[90vh] overflow-auto">
+      {/* Header */}
+      {summaryContext.type === 'chapter' ? (
+        <div className="relative h-48 bg-gray-100">
+          <img
+            src={summaryContext.chapter.image}
+            alt={summaryContext.chapter.title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+            <div className="p-6 text-white">
+              <div className="flex flex-wrap gap-2 mb-2">
+                <span className="bg-green-500 px-2 py-1 rounded text-xs font-medium">
+                  Chapter {summaryContext.chapter.chapter}
+                </span>
+                <span className={`px-2 py-1 rounded text-xs font-medium ${
+                  summaryContext.chapter.complexity === 'low'
+                    ? 'bg-green-400'
+                    : summaryContext.chapter.complexity === 'medium'
+                      ? 'bg-blue-400'
+                      : 'bg-purple-400'
+                }`}>
+                  {summaryContext.chapter.complexity.charAt(0).toUpperCase() + summaryContext.chapter.complexity.slice(1)} Complexity
+                </span>
+              </div>
+              <h2 className="text-2xl font-bold">{summaryContext.chapter.title}</h2>
+              <p className="text-sm text-gray-200">{summaryContext.chapter.subject} • Class {summaryContext.chapter.class}</p>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className="p-6 border-b border-gray-200">
+          <h2 className="text-2xl font-bold text-gray-800">{summaryContext.file.name}</h2>
+          <p className="text-sm text-gray-600">Uploaded File • {(summaryContext.file.size / (1024 * 1024)).toFixed(2)} MB</p>
+        </div>
+      )}
+
+      {/* Body */}
+      <div className="p-6">
+        {summaryContext.type === 'chapter' && (
+          <>
+            <div className="mb-6">
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Key Topics</h3>
+              <div className="flex flex-wrap gap-2">
+                {summaryContext.chapter.keyTopics.map((topic, index) => (
+                  <div key={index} className="bg-gray-100 px-3 py-2 rounded-lg text-gray-700">
+                    {topic}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Summary Options</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Language</label>
+                  <select
+                    value={selectedLanguage}
+                    onChange={(e) => setSelectedLanguage(e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  >
+                    {languages.map(language => (
+                      <option key={language} value={language}>{language}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Summary Level</label>
+                  <div className="flex space-x-4">
+                    {['simple', 'detailed', 'advanced'].map(level => (
+                      <label key={level} className="flex items-center">
+                        <input
+                          type="radio"
+                          name="summaryLevel"
+                          value={level}
+                          checked={summaryLevel === level}
+                          onChange={() => setSummaryLevel(level)}
+                          className="mr-2 h-4 w-4 text-green-600 focus:ring-green-500"
+                        />
+                        <span className="text-sm text-gray-700">
+                          {level.charAt(0).toUpperCase() + level.slice(1)}
+                        </span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={handleGenerateSummary}
+                disabled={isGeneratingSummary}
+                className={`w-full py-3 rounded-lg flex items-center justify-center ${
+                  isGeneratingSummary
+                    ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                    : 'bg-green-500 text-white hover:bg-green-600'
+                }`}
+              >
+                {isGeneratingSummary ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Generating Summary...
+                  </>
+                ) : (
+                  <>
+                    <MdOutlineSummarize className="mr-2" />
+                    Generate {summaryLevel.charAt(0).toUpperCase() + summaryLevel.slice(1)} Summary
+                  </>
+                )}
+              </button>
+            </div>
+          </>
+        )}
+
+        {generatedSummary && !isGeneratingSummary && (
+          <div className="bg-white border border-gray-200 text-black rounded-lg overflow-hidden">
+            <div className="bg-gray-50 p-4 flex justify-between items-center border-b border-gray-200">
+              <div className="flex items-center">
+                <div className="bg-green-100 p-2 rounded-lg mr-3">
+                  <MdOutlineSummarize className="text-green-600" />
+                </div>
+                <div>
+                  <h3 className="font-medium  text-gray-800">Simplified Summary</h3>
+                  <p className="text-xs text-gray-500">
+                    {summaryContext.type === 'chapter' ? summaryContext.chapter.title : summaryContext.file.name} • {selectedLanguage} • {summaryLevel.charAt(0).toUpperCase() + summaryLevel.slice(1)}
+                  </p>
+                </div>
+              </div>
+              <div className="flex space-x-2">
+                <button
+                  onClick={() => {navigator.clipboard.writeText(generatedSummary)}}
+                  className="text-gray-500 hover:text-gray-700"
+                  title="Copy to clipboard"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                  </svg>
+                </button>
+                <button
+                  onClick={() => {setIsBookmarked(!isBookmarked)}}
+                  className={`${isBookmarked ? 'text-yellow-500' : 'text-gray-500 hover:text-gray-700'}`}
+                  title={isBookmarked ? "Remove bookmark" : "Bookmark this summary"}
+                >
+                  <FaBookmark className="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+            <div className="p-4">
+              <div className="prose max-w-none">
+                <div className="whitespace-pre-line">
+                  {generatedSummary}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {summaryError && !isGeneratingSummary && (
+          <div className="p-4 bg-red-50 border border-red-200 rounded-md text-red-700 mt-4">
+            <p className="font-medium">Error generating summary</p>
+            <p className="text-sm">{summaryError}</p>
+          </div>
+        )}
+      </div>
+
+      {/* Close Button */}
+      <div className="p-6 border-t border-gray-200 flex justify-end">
+        <button
+          onClick={() => setSummaryContext(null)}
+          className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+      
+      {/* Saved Summaries View */}
+      {activeView === 'saved' && (
+        <div className="bg-white rounded-xl shadow-sm p-6">
+          <h2 className="text-xl font-semibold text-gray-800 mb-6">Saved Summaries</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3].map((item) => (
+              <div key={item} className="border border-gray-200 rounded-lg overflow-hidden hover:border-green-300 transition-colors">
+                <div className="p-4 border-b border-gray-200">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-medium text-gray-800">
+                      {['Real Numbers', 'Chemical Reactions', 'Nationalism in India'][item - 1]}
+                    </h3>
+                    <span className="text-xs px-2 py-1 rounded-full bg-green-100 text-green-800">
+                      {['Mathematics', 'Science', 'Social Science'][item - 1]}
+                    </span>
+                  </div>
+                  
+                  <div className="flex items-center text-sm text-gray-500 mb-3">
+                    <MdOutlineSchool className="mr-1" />
+                    <span>Class 10</span>
+                    <span className="mx-2">•</span>
+                    <BsTranslate className="mr-1" />
+                    <span>{['Hindi', 'Bengali', 'Tamil'][item - 1]}</span>
+                  </div>
+                  
+                  <p className="text-sm text-gray-600 mb-3 line-clamp-3">
+                    {[
+                      'Real numbers include all rational and irrational numbers. They can be represented on a number line and include numbers like 5, -3, 0, 1/2, √2, and π.',
+                      'Chemical reactions involve the transformation of reactants into products. Types include combination, decomposition, displacement, and redox reactions.',
+                      'Nationalism in India grew during the colonial period as a response to British rule. Key movements included Non-Cooperation, Civil Disobedience, and Quit India.'
+                    ][item - 1]}
+                  </p>
+                  
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-gray-500">Saved on {['May 15', 'May 18', 'May 20'][item - 1]}, 2023</span>
+                    <div className="flex space-x-2">
+                      <button className="text-gray-400 hover:text-gray-600">
+                        <FaShare className="text-sm" />
+                      </button>
+                      <button className="text-gray-400 hover:text-gray-600">
+                        <FaDownload className="text-sm" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      
+      {/* Chapter Detail Modal */}
+      {selectedChapter && (
+        <div className="fixed inset-0 text-black bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl shadow-lg w-full max-w-4xl max-h-[90vh] overflow-auto">
+            <div className="relative h-48 bg-gray-100">
+              <img 
+                src={selectedChapter.image} 
+                alt={selectedChapter.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                <div className="p-6 text-white">
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    <span className="bg-green-500 px-2 py-1 rounded text-xs font-medium">
+                      Chapter {selectedChapter.chapter}
+                    </span>
+                    <span className={`px-2 py-1 rounded text-xs font-medium ${
+                      selectedChapter.complexity === 'low' 
+                        ? 'bg-green-400' 
+                        : selectedChapter.complexity === 'medium'
+                          ? 'bg-blue-400'
+                          : 'bg-purple-400'
+                    }`}>
+                                      {selectedChapter.complexity.charAt(0).toUpperCase() + selectedChapter.complexity.slice(1)} Complexity
+                    </span>
+                  </div>
+                  <h2 className="text-2xl font-bold">{selectedChapter.title}</h2>
+                  <p className="text-sm text-gray-200">{selectedChapter.subject} • Class {selectedChapter.class}</p>
+                </div>
+              </div>
+              <button 
+                onClick={() => setSelectedChapter(null)}
+                className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm hover:bg-gray-100 transition-colors"
+              >
+                <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            
+            <div className="p-6 text-black">
+              <div className="flex flex-wrap gap-3 mb-6">
+                <div className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700 flex items-center">
+                  <MdOutlineSchool className="mr-1" />
+                  Class {selectedChapter.class}
+                </div>
+                <div className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700 flex items-center">
+                  <FaBookOpen className="mr-1" />
+                  Chapter {selectedChapter.chapter}
+                </div>
+                <div className={`px-3 py-1 rounded-full text-sm flex items-center ${
+                  selectedChapter.complexity === 'low' 
+                    ? 'bg-green-100 text-green-800' 
+                    : selectedChapter.complexity === 'medium'
+                      ? 'bg-blue-100 text-blue-800'
+                      : 'bg-purple-100 text-purple-800'
+                }`}>
+                  <BsArrowRight className="mr-1" />
+                  {selectedChapter.complexity.charAt(0).toUpperCase() + selectedChapter.complexity.slice(1)} Complexity
+                </div>
+                <div className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700 flex items-center">
+                  <BsTranslate className="mr-1" />
+                  {selectedLanguage}
+                </div>
+              </div>
+              
+              <div className="mb-6">
+                <h3 className="text-lg font-medium text-gray-800 mb-3">Key Topics</h3>
+                <div className="flex flex-wrap gap-2">
+                  {selectedChapter.keyTopics.map((topic, index) => (
+                    <div key={index} className="bg-gray-100 px-3 py-2 rounded-lg text-gray-700">
+                      {topic}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="mb-6">
+                <h3 className="text-lg font-medium text-gray-800 mb-3">Summary Options</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Language</label>
                     <select
+                      value={selectedLanguage}
+                      onChange={(e) => setSelectedLanguage(e.target.value)}
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                     >
-                      {languages.filter(lang => lang !== 'all').map(language => (
+                      {languages.map(language => (
                         <option key={language} value={language}>{language}</option>
                       ))}
                     </select>
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Difficulty Level</label>
-                    <select
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    >
-                      {['Beginner', 'Intermediate', 'Advanced'].map(level => (
-                        <option key={level} value={level}>{level}</option>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Summary Level</label>
+                    <div className="flex space-x-4">
+                      {['simple', 'detailed', 'advanced'].map(level => (
+                        <label key={level} className="flex items-center">
+                          <input
+                            type="radio"
+                            name="summaryLevel"
+                            value={level}
+                            checked={summaryLevel === level}
+                            onChange={() => setSummaryLevel(level)}
+                            className="mr-2 h-4 w-4 text-green-600 focus:ring-green-500"
+                          />
+                          <span className="text-sm text-gray-700">
+                            {level.charAt(0).toUpperCase() + level.slice(1)}
+                          </span>
+                        </label>
                       ))}
-                    </select>
+                    </div>
                   </div>
                 </div>
                 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Description
-                  </label>
-                  <textarea
-                    placeholder="Provide a brief description of your content..."
-                    rows={3}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  ></textarea>
-                </div>
+                <button
+                  onClick={handleGenerateSummary}
+                  disabled={isGeneratingSummary}
+                  className={`w-full py-3 rounded-lg flex items-center justify-center ${
+                    isGeneratingSummary
+                      ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                      : 'bg-green-500 text-white hover:bg-green-600'
+                  }`}
+                >
+                  {isGeneratingSummary ? (
+                    <>
+                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Generating Summary...
+                    </>
+                  ) : (
+                    <>
+                      <MdOutlineSummarize className="mr-2" />
+                      Generate {summaryLevel.charAt(0).toUpperCase() + summaryLevel.slice(1)} Summary
+                    </>
+                  )}
+                </button>
               </div>
               
-              <div className="flex justify-end space-x-3">
-                <button
-                  onClick={() => setShowUploadModal(false)}
-                  className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50"
-                >
-                  Cancel
-                </button>
-                <button
-                  className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors flex items-center"
-                >
-                  <FaUpload className="mr-2" />
-                  Upload Content
-                </button>
-              </div>
+              // Inside the component, update the UI for displaying summary results
+              
+              // In the chapter detail modal, update the summary display section:
+              {generatedSummary && !isGeneratingSummary && (
+                <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                  <div className="bg-gray-50 p-4 flex justify-between items-center border-b border-gray-200">
+                    <div className="flex items-center">
+                      <div className="bg-green-100 p-2 rounded-lg mr-3">
+                        <MdOutlineSummarize className="text-green-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-gray-800">Simplified Summary</h3>
+                        <p className="text-xs text-gray-500">{selectedChapter?.title} • {selectedLanguage} • {summaryLevel.charAt(0).toUpperCase() + summaryLevel.slice(1)}</p>
+                      </div>
+                    </div>
+                    <div className="flex space-x-2">
+                      <button 
+                        onClick={() => {navigator.clipboard.writeText(generatedSummary)}}
+                        className="text-gray-500 hover:text-gray-700"
+                        title="Copy to clipboard"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                      </button>
+                      <button 
+                        onClick={() => {setIsBookmarked(!isBookmarked)}}
+                        className={`${isBookmarked ? 'text-yellow-500' : 'text-gray-500 hover:text-gray-700'}`}
+                        title={isBookmarked ? "Remove bookmark" : "Bookmark this summary"}
+                      >
+                        <FaBookmark className="h-5 w-5" />
+                      </button>
+                    </div>
+                  </div>
+                  
+                  <div className="p-4">
+                    <div className="prose max-w-none">
+                      <div className="whitespace-pre-line">
+                        {generatedSummary}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              
+              {summaryError && !isGeneratingSummary && (
+                <div className="p-4 bg-red-50 border border-red-200 rounded-md text-red-700 mt-4">
+                  <p className="font-medium">Error generating summary</p>
+                  <p className="text-sm">{summaryError}</p>
+                </div>
+              )}
             </div>
           </div>
         </div>

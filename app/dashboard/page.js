@@ -7,9 +7,8 @@ import OverviewTab from '../components/dashboard/tabs/OverviewTab';
 import AIChatbotTab from '../components/dashboard/tabs/AIChatbotTab';
 import LocalContentTab from '../components/dashboard/tabs/LocalContentTab';
 import StudentsTab from '../components/dashboard/tabs/StudentsTab';
-import AdaptiveAssessmentsTab from '../components/dashboard/tabs/AdaptiveAssessmentsTab';
 import Sidebar from '../components/dashboard/Sidebar';
-import AIXplainTab from '../components/dashboard/tabs/AIXplainTab';
+import ContentGeneratorTab from '../components/dashboard/tabs/ContentGeneratorTab';
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('Dashboard');
@@ -31,10 +30,8 @@ export default function Dashboard() {
         return <LocalContentTab />;
       case 'OpportunityNavigator':
         return <StudentsTab />;
-      case 'AdaptiveAssessments':
-        return <AdaptiveAssessmentsTab />;
-      case 'AIXplain':
-        return <AIXplainTab />;
+      case 'ContentGenerator':
+        return <ContentGeneratorTab />;
       default:
         return <OverviewTab />;
     }
@@ -51,10 +48,8 @@ export default function Dashboard() {
         return 'Regional Content';
       case 'OpportunityNavigator':
         return 'Opportunity Navigator';
-      case 'AdaptiveAssessments':
-        return 'Adaptive Assessments';
-      case 'AIXplain':
-        return 'AIXplain Assistant';
+      case 'ContentGenerator':
+        return 'Content Generator';
       default:
         return 'Dashboard';
     }
@@ -71,10 +66,8 @@ export default function Dashboard() {
         return 'Access and manage educational content in 14 regional languages.';
       case 'OpportunityNavigator':
         return 'Discover scholarships, programs and opportunities for rural students.';
-      case 'AdaptiveAssessments':
+      case 'ContentGenerator':
         return 'Create and manage adaptive assessments for different learning levels.';
-      case 'AIXplain':
-        return 'Voice-based learning content for areas with low literacy or connectivity.';
       default:
         return '';
     }

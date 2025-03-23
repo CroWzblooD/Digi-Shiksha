@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { BsRobot, BsLightningCharge, BsTranslate, BsStarFill, BsArrowRight, BsChevronDown, BsChevronUp, BsBookmark, BsBookmarkFill, BsThreeDots, BsPlayFill, BsPauseFill } from 'react-icons/bs';
-import { FaUser, FaRegLightbulb, FaRegFileAlt, FaRegClock, FaRegStar } from 'react-icons/fa';
+import { FaUser, FaRegLightbulb, FaRegFileAlt, FaRegClock, FaRegStar, FaCheck } from 'react-icons/fa';
 import { MdOutlineRecordVoiceOver, MdOutlineTranslate, MdOutlineSchool } from 'react-icons/md';
 import { RiTranslate, RiVoiceprintFill } from 'react-icons/ri';
 import Image from 'next/image';
@@ -30,24 +30,26 @@ const AIChatbotTab = () => {
   const [activeTemplate, setActiveTemplate] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentAudio, setCurrentAudio] = useState(null);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
   
   // Ref for chat container to auto-scroll
   const chatContainerRef = useRef(null);
   const audioRef = useRef(null);
+  
+  // Languages for translation
+  const languages = [
+    'English', 'Hindi', 'Bengali', 'Tamil', 'Telugu', 
+    'Marathi', 'Gujarati', 'Kannada', 'Malayalam', 'Punjabi'
+  ];
   
   // Auto-scroll to bottom of chat when messages change
   useEffect(() => {
     if (chatContainerRef.current) {
       chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
     }
-  }, [messages]);
-  
-  // Sample language options
-  const languages = [
-    'English', 'Hindi', 'Bengali', 'Tamil', 'Telugu', 
-    'Marathi', 'Gujarati', 'Kannada', 'Malayalam', 'Punjabi'
-  ];
-  
+  }, [messages, isTyping]);
+
   // Sample templates for quick prompts
   const promptTemplates = [
     {
@@ -104,12 +106,11 @@ const AIChatbotTab = () => {
     }
   ];
   
-  // Handle sending a message
-  const handleSendMessage = () => {
-    if (userInput.trim() === '') return;
+  // Handle sending messages
+  const handleSendMessage = async () => {
+    if (userInput.trim() === '' || isTyping) return;
     
-    // Add user message
-    const newUserMessage = {
+    const userMessage = {
       id: messages.length + 1,
       sender: 'user',
       content: userInput,
@@ -117,32 +118,124 @@ const AIChatbotTab = () => {
       format: 'text'
     };
     
-    setMessages(prev => [...prev, newUserMessage]);
+    setMessages(prev => [...prev, userMessage]);
     setUserInput('');
     setIsTyping(true);
+    setIsError(false);
     
-    // Simulate AI response after a delay
-    setTimeout(() => {
-      let responseContent = '';
+    try {
+      // Determine which feature to use
+      const feature = activeFeature;
+      
+      // Send request to API
+      const response = await fetch('/api/aixplain', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          prompt: userMessage.content,
+          feature: feature,
+          language: selectedLanguage
+        }),
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to get response');
+      }
+      
+      // Process the response based on the feature
+      let responseContent = data.response;
       let responseFormat = 'text';
       
-      // Generate different responses based on active feature
-      if (activeFeature === 'chat') {
-        const response = generateChatResponse(userInput);
-        responseContent = response.content;
-        responseFormat = response.format;
-      } else if (activeFeature === 'translation') {
-        const response = generateTranslationResponse(userInput, selectedLanguage);
-        responseContent = response.content;
-        responseFormat = response.format;
-      } else if (activeFeature === 'voice') {
-        const response = generateVoiceResponse(userInput);
-        responseContent = response.content;
-        responseFormat = response.format;
-      } else if (activeFeature === 'quiz') {
-        const response = generateQuizResponse(userInput);
-        responseContent = response.content;
-        responseFormat = response.format;
+      // Check if response contains images
+      if (typeof responseContent === 'object' && responseContent.containsImages) {
+        responseContent = {
+          text: responseContent.text,
+          images: responseContent.images
+        };
+        responseFormat = 'image';
+      } 
+      // For quiz feature, try to parse the response as a quiz
+      else if (feature === 'quiz') {
+        try {
+          // Check if the response contains a quiz structure
+          if (data.response.includes('Question') || data.response.includes('quiz') || data.response.includes('Quiz')) {
+            // Extract title
+            let title = "Quiz";
+            const titleMatch = data.response.match(/\*\*(.*?)\*\*|#(.*?)(?:\n|$)/);
+            if (titleMatch) {
+              title = titleMatch[1] || titleMatch[2];
+            }
+            
+            // Parse questions and options
+            const questions = [];
+            const questionRegex = /(?:Question|Q)[\s:]?(\d+)[.:]?\s*(.*?)(?=(?:(?:Question|Q)[\s:]?\d+)|$)/gs;
+            let questionMatch;
+            
+            while ((questionMatch = questionRegex.exec(data.response)) !== null) {
+              const questionNumber = questionMatch[1];
+              const questionContent = questionMatch[2].trim();
+              
+              // Extract the question text and options
+              const questionText = questionContent.split(/[a-d]\)|\n[a-d]\.|\n[a-d]\s/)[0].trim();
+              
+              // Extract options
+              const options = [];
+              const optionsRegex = /(?:^|\n)([a-d])[\s\)\.](.*?)(?=(?:\n[a-d][\s\)\.])|\n\n|$)/gs;
+              let optionMatch;
+              let optionsText = questionContent.substring(questionText.length);
+              
+              while ((optionMatch = optionsRegex.exec(optionsText)) !== null) {
+                options.push(optionMatch[2].trim());
+              }
+              
+              // Determine the correct answer
+              let answer = null;
+              const answerRegex = /(?:correct answer|answer)[\s:]?\s*([a-d])/i;
+              const answerMatch = questionContent.match(answerRegex);
+              
+              if (answerMatch) {
+                answer = answerMatch[1].charCodeAt(0) - 97; // Convert a,b,c,d to 0,1,2,3
+              }
+              
+              questions.push({
+                question: questionText,
+                options: options,
+                answer: answer
+              });
+            }
+            
+            if (questions.length > 0) {
+              responseContent = {
+                title: title,
+                questions: questions
+              };
+              responseFormat = 'quiz';
+            } else {
+              // If parsing failed, just use the text response
+              responseContent = data.response;
+              responseFormat = 'text';
+            }
+          } else {
+            responseContent = data.response;
+            responseFormat = 'text';
+          }
+        } catch (e) {
+          console.error('Error parsing quiz response:', e);
+          responseContent = data.response;
+          responseFormat = 'text';
+        }
+      }
+      
+      // Format text responses to handle HTML formatting
+      if (responseFormat === 'text') {
+        // Replace HTML tags with React-friendly formatting
+        responseContent = responseContent
+          .replace(/<strong>(.*?)<\/strong>/g, '**$1**')
+          .replace(/<em>(.*?)<\/em>/g, '*$1*');
       }
       
       const aiResponse = {
@@ -154,8 +247,22 @@ const AIChatbotTab = () => {
       };
       
       setMessages(prev => [...prev, aiResponse]);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setIsError(true);
+      
+      // Add error message
+      setMessages(prev => [...prev, {
+        id: messages.length + 2,
+        sender: 'ai',
+        content: `I'm sorry, I encountered an error while processing your request. Please try again later.`,
+        timestamp: new Date().toISOString(),
+        format: 'text',
+        isError: true
+      }]);
+    } finally {
       setIsTyping(false);
-    }, 1500);
+    }
   };
   
   // Handle feature selection
@@ -214,181 +321,6 @@ const AIChatbotTab = () => {
     }
   };
   
-  // Response generators for different features
-  const generateChatResponse = (input) => {
-    if (input.toLowerCase().includes('learning module') || input.toLowerCase().includes('module')) {
-      return {
-        content: {
-          title: "Digital Literacy Learning Module",
-          sections: [
-            {
-              title: "Introduction to Digital Literacy",
-              description: "Basic concepts and importance of digital literacy in today's world."
-            },
-            {
-              title: "Understanding Digital Devices",
-              description: "Introduction to computers, smartphones, and other digital devices."
-            },
-            {
-              title: "Internet Basics and Safety",
-              description: "How the internet works and staying safe online."
-            },
-            {
-              title: "Digital Communication Tools",
-              description: "Using email, messaging apps, and social media responsibly."
-            },
-            {
-              title: "Information Literacy",
-              description: "Finding, evaluating, and using online information effectively."
-            },
-            {
-              title: "Practical Exercises",
-              description: "Hands-on activities to practice digital literacy skills."
-            }
-          ]
-        },
-        format: 'module'
-      };
-    } else if (input.toLowerCase().includes('simplify')) {
-      return {
-        content: "Here's a simplified version:\n\n\"Money services help people and villages grow. They help poor people have better lives. When people can save money in banks and get loans, they can start small businesses and earn more.\"",
-        format: 'text'
-      };
-    } else if (input.toLowerCase().includes('quiz')) {
-      return {
-        content: {
-          title: "Internet Safety Quiz",
-          questions: [
-            {
-              question: "What should you do if you receive an email asking for your password?",
-              options: [
-                "Reply with your password",
-                "Ignore and delete the email",
-                "Click on any links in the email",
-                "Share the email with friends"
-              ],
-              answer: 1
-            },
-            {
-              question: "Which of these is a strong password?",
-              options: [
-                "password123",
-                "your name",
-                "Tr5&9p!L@2q",
-                "12345678"
-              ],
-              answer: 2
-            },
-            {
-              question: "What is 'phishing'?",
-              options: [
-                "A fun online game",
-                "A type of computer virus",
-                "Attempts to trick you into revealing personal information",
-                "A way to speed up your internet"
-              ],
-              answer: 2
-            }
-          ]
-        },
-        format: 'quiz'
-      };
-    } else if (input.toLowerCase().includes('voice') || input.toLowerCase().includes('script')) {
-      return {
-        content: {
-          title: "Women's Safety Voice Script",
-          script: "Welcome to today's lesson on personal safety. Today we'll learn about important safety practices for women in various situations.\n\nFirst, let's talk about being aware of your surroundings. Always notice who is around you and what is happening nearby.",
-          audioUrl: "/demo-audio.mp3"
-        },
-        format: 'voice'
-      };
-    } else {
-      return {
-        content: "I understand you're interested in creating educational content. Could you provide more details about the specific type of content you need help with? I can assist with creating learning modules, simplifying content, generating quizzes, or creating voice scripts.",
-        format: 'text'
-      };
-    }
-  };
-  
-  const generateTranslationResponse = (input, language) => {
-    const translations = {
-      'Hindi': {
-        content: {
-          original: input,
-          translated: 'मैंने आपकी आवश्यकताओं के अनुसार एक शिक्षण मॉड्यूल बनाया है। यहां एक मसौदा रूपरेखा है...',
-          language: 'Hindi'
-        },
-        format: 'translation'
-      },
-      'Bengali': {
-        content: {
-          original: input,
-          translated: 'আমি আপনার প্রয়োজনীয়তা অনুসারে একটি শিক্ষা মডিউল তৈরি করেছি। এখানে একটি খসড়া রূপরেখা রয়েছে...',
-          language: 'Bengali'
-        },
-        format: 'translation'
-      },
-      'Tamil': {
-        content: {
-          original: input,
-          translated: 'உங்கள் தேவைகளின் அடிப்படையில் ஒரு கற்றல் தொகுதியை உருவாக்கியுள்ளேன். இங்கே ஒரு வரைவு வரைவு உள்ளது...',
-          language: 'Tamil'
-        },
-        format: 'translation'
-      }
-    };
-    
-    return translations[language] || {
-      content: {
-        original: input,
-        translated: `I've translated your content to ${language}. Here's the translated version...`,
-        language: language
-      },
-      format: 'translation'
-    };
-  };
-  
-  const generateVoiceResponse = (input) => {
-    const topic = input.replace('Write a voice-based learning script about ', '').replace(' for students without internet access', '');
-    
-    return {
-      content: {
-        title: `${topic} Voice Script`,
-        script: `Welcome to our lesson on ${topic}. Today, we'll explore key concepts that will help you understand this important topic.\n\nLet's begin by understanding the basics of ${topic} and why it matters in our daily lives.`,
-        audioUrl: "/demo-audio.mp3"
-      },
-      format: 'voice'
-    };
-  };
-  
-  const generateQuizResponse = (input) => {
-    const topic = input.replace('Create a 5-question quiz about ', '').replace(' with multiple choice answers', '');
-    
-    return {
-      content: {
-        title: `${topic} Quiz`,
-        questions: [
-          {
-            question: `What is the most important aspect of ${topic}?`,
-            options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-            answer: 2
-          },
-          {
-            question: `Which of the following best describes ${topic}?`,
-            options: ["Description 1", "Description 2", "Description 3", "Description 4"],
-            answer: 1
-          },
-          {
-            question: `How can ${topic} benefit rural communities?`,
-            options: ["Benefit 1", "Benefit 2", "Benefit 3", "Benefit 4"],
-            answer: 0
-          }
-        ]
-      },
-      format: 'quiz'
-    };
-  };
-  
   // Format timestamp
   const formatTime = (timestamp) => {
     const date = new Date(timestamp);
@@ -432,7 +364,7 @@ const AIChatbotTab = () => {
                         key={oIndex} 
                         className={`flex items-center p-2 rounded-md ${
                           q.answer === oIndex 
-                            ? 'bg-green-50 border border-green-200' 
+                            ? 'bg-green-50/80 text-green-700 hover:bg-green-100' 
                             : 'hover:bg-gray-50'
                         }`}
                       >
@@ -516,10 +448,67 @@ const AIChatbotTab = () => {
           </div>
         );
       
-      default:
+      case 'image':
         return (
-          <p className="text-sm whitespace-pre-line">{message.content}</p>
+          <div className="bg-white/80 rounded-lg p-3 mt-2">
+            <div 
+              className="text-sm mb-3"
+              dangerouslySetInnerHTML={{ 
+                __html: message.content.text
+                  .split('\n\n')
+                  .map(para => `<p>${para.replace(/\n/g, '<br/>')}</p>`)
+                  .join('')
+              }}
+            />
+            <div className="mt-3 space-y-3">
+              {message.content.images.map((image, index) => (
+                <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+                  <div className="relative w-full h-64">
+                    <img 
+                      src={image.url} 
+                      alt={image.alt || "Generated image"} 
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = "/placeholder-image.jpg";
+                        e.target.alt = "Image failed to load";
+                      }}
+                    />
+                  </div>
+                  <div className="p-2 bg-gray-50 text-xs text-gray-500 flex justify-between">
+                    <span>{image.alt || "Generated image"}</span>
+                    <a 
+                      href={image.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-green-600 hover:text-green-700"
+                      download="generated-image.png"
+                    >
+                      Download Image
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         );
+      
+      default:
+        // Improved text rendering with HTML formatting
+        if (typeof message.content === 'string') {
+          return (
+            <div 
+              className="text-sm"
+              dangerouslySetInnerHTML={{ 
+                __html: message.content
+                  .split('\n\n')
+                  .map(para => `<p>${para.replace(/\n/g, '<br/>')}</p>`)
+                  .join('')
+              }}
+            />
+          );
+        }
+        return <p className="text-sm whitespace-pre-line">{message.content}</p>;
     }
   };
   
@@ -555,6 +544,19 @@ const AIChatbotTab = () => {
           id: 1,
           sender: 'ai',
           content: `I can help translate your educational content to ${language}. What would you like to translate?`,
+          timestamp: new Date().toISOString(),
+          format: 'text'
+        }
+      ]);
+    } else {
+      // For other features, update the welcome message to indicate language change
+      setMessages([
+        {
+          id: 1,
+          sender: 'ai',
+          content: language === 'English' 
+            ? getWelcomeMessage(activeFeature)
+            : `I'll now respond in ${language}. ${getWelcomeMessage(activeFeature)}`,
           timestamp: new Date().toISOString(),
           format: 'text'
         }
