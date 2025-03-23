@@ -199,16 +199,3 @@ This project is licensed under the **MIT License** - see the [LICENSE.md](LICENS
 
 **🚀 Empower Rural Education with AI Innovation!**  
 *DigiShiksha AI: Bridging the Gap, One Student at a Time.*
-
-Citations:
-[1] https://aixplain.com/blog/introducing-aixplain-chat/
-[2] https://aixplain.com/case-study/ai-airline-chatbot-aviation-document-management/
-[3] https://slashdot.org/software/p/aiXplain/
-[4] https://www.linkedin.com/posts/aixplain_release-notes-280-aixplain-activity-7236764923286974465-SJfJ
-[5] https://aixplain.com
-[6] https://slashdot.org/software/comparison/MarkovML-vs-aiXplain/
-[7] https://sourceforge.net/software/product/aiXplain/alternatives
-[8] https://www.linkedin.com/posts/rohit-ghumare_ai-softwaretesting-opensource-activity-7270131294267711488-5A1O
-
----
-Answer from Perplexity: pplx.ai/share
