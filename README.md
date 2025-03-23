@@ -143,8 +143,6 @@ Rural education in India faces critical challenges, including **limited access t
 
 ### 🔍 **Cloud OCR & Summarization**  
 
-# 🌟 **DigiShiksha AI: OCR & Multilingual Summarization Workflow**  
-
 ### 🖼️ **End-to-End Workflow Diagram**  
 **Frontend (User) → Cloudinary → AIxplain Pipeline (OCR + DeepSeek) → Gemini2_Flash Agent → Frontend**  
 
